@@ -1,0 +1,9 @@
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+export PS1='\u@\h:\w\$ '

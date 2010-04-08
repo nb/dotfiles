@@ -1,0 +1,9 @@
+export PATH="$PATH:$HOME/bin"
+export EDITOR=vim
+export VISUAL=vim
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export PYTHONPATH="$PYTHONPATH:$HOME/lib/python:$HOME/pyfmi/site/lib/python"
+export PYTHONSTARTUP="$DOTFILES/pythonstartup.py"

@@ -1,0 +1,24 @@
+### COMMON COMMANDS AND MISSPELLINGS ###
+alias лс=ls
+alias цд=cd
+alias l=ls
+alias sl=ls
+alias ll='ls -l'
+alias la='ls -A'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias cd..='cd ..'
+alias ..='cd ..'
+
+### SVN ALIASES ###
+alias v='svn diff | vim -'
+alias t='svn st --ignore-externals'
+# TODO: regex, which works on all svn versions
+alias cleansvn='svn st | grep ^\? | cut -f 8 -d " " | xargs rm'
+alias addsvn='svn st | grep ^\? | cut -d " " -f 8 | xargs svn add'
+
+### MISC ###
+alias s="gpg-edit $HOME/secrets.gpg"
+alias killjobs='jobs -l | perl -pne '\''/\S+\s+(\d+)/; $_ = " $1" if($1);'\'' | xargs kill -9'
+alias cleandsstore='find . -name ".DS_Store" -delete'

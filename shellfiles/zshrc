@@ -1,0 +1,41 @@
+### COMMON OPTIONS ###
+setopt AUTO_CD # '$ foo' means '$ cd foo' if 'foo' is not a command
+setopt AUTO_PUSHD # 'cd' is now cooler
+
+### KEYBINDINGS ###
+bindkey -e
+bindkey '^u' backward-kill-line # in zsh ^u kills the whole line
+
+### PROMPT ###
+# prompt shamelessly stolen from http://github.com/skanev/SHELLFILES/blob/master/zsh/config
+# sans the vcprompt, which doesn't help me much with subversion
+autoload -U colors
+colors
+setopt prompt_subst
+PROMPT='→ '
+RPROMPT='%{$fg_bold[green]%}%~%{$fg_bold[white]%}:%{$fg_bold[blue]%}%m %{$fg_bold[red]%}$(svn_status_prompt)%{$reset_color%}'
+
+### COMPLETION ###
+autoload compinit
+compinit
+
+### HISTORY ###
+HISTFILE=~/.zsh_history # if unset, the history is not saved
+HISTSIZE=1000 # history items kept internally
+SAVEHIST=1000 # history items saved
+
+setopt HIST_IGNORE_DUPS # ignore duplication command history list
+setopt SHARE_HISTORY # share command history data
+setopt HIST_IGNORE_SPACE # don't keep in history commands, which start with space
+setopt APPEND_HISTORY # write history only when closing
+setopt EXTENDED_HISTORY # add more info
+setopt HIST_FCNTL_LOCK # smarter locking
+
+### SPELLING CORRECTION
+setopt CORRECT # type zhs and see: zsh: correct 'zhs' to 'zsh' [nyae]?
+setopt CORRECTALL # correct arguments, too
+
+### MISC ###
+autoload url-quote-magic
+zle -N self-insert url-quote-magic # auto-quote special chars in URLs
+WORDCHARS=`echo $WORDCHARS | sed 's/[\/=#_&;-]//g'` # add more word separators

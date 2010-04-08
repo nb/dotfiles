@@ -1,0 +1,25 @@
+ServerAliveInterval 5
+
+Host wpcom
+HostName nikolay.gilberto.wordpress.com
+User wpdev
+
+Host zver
+HostName zver.fsa-bg.org
+User emerald
+
+Host nikolay.bg
+HostName nikolay.bg
+User niichavo
+
+Host wporg
+HostName nikolay.dev.wordpress.org
+User wporgdev
+
+Host deedee
+HostName deedee.hno3.org
+User nb
+
+Host gravatar
+HostName web1.luv.gravatar.com
+User nbachiyski

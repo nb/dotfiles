@@ -1,0 +1,9 @@
+# echoes status characters for the current SVN working copy
+# saves the regular svn st call
+function svn_status_prompt() {
+    for char in M D A F; do
+        if [[ `svn status -q --ignore-externals | grep ^$char` != '' ]]; then
+            echo -n $char;
+        fi;
+    done
+}

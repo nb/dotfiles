@@ -1,0 +1,24 @@
+### Section for authentication and authorization customizations.
+[auth]
+store-passwords = yes
+store-auth-creds = yes
+
+[miscellany]
+global-ignores = *.o *.lo *.la .*.rej *.rej .*~ *~ .#* .DS_Store
+enable-auto-props = yes
+
+### Section for configuring automatic properties.
+[auto-props]
+### Note that auto-props functionality must be enabled, which
+### is typically done by setting the 'enable-auto-props' option.
+*.c = svn:eol-style=native
+*.h = svn:eol-style=native
+*.sh = svn:eol-style=native;svn:executable
+*.txt = svn:eol-style=native
+*.png = svn:mime-type=image/png
+*.jpg = svn:mime-type=image/jpeg
+Makefile = svn:eol-style=native
+*.php = svn:eol-style=native
+*.js = svn:eol-style=native
+*.css = svn:eol-style=native
+

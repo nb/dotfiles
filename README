@@ -1,0 +1,15 @@
+Here are my personal configuration files for the shell
+and a couple other tools I use on a daily basis.
+
+I don't set up a new machine every day, so there is
+no automated way to symlink all the needed files out
+of this folder.
+
+Here are the suggested links:
+
+~/dotfiles     -> dotfiles
+~/.bashrc/     -> dotfiles/shellfiles/sample-shellrc
+~/.zshrc       -> dotfiles/shellfiles/sample-shellrc
+~/.vimrc       -> vimrc
+~/.ssh/config  -> ssh-config
+~/.mess        -> mess
