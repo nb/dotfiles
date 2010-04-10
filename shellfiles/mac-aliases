@@ -9,5 +9,9 @@ alias dngs='open *.[dD][nN][gG]'
 alias rwls='open *.[rR][wW][lL]'
 
 alias log='tail -f /Applications/MAMP/logs/php_error.log'
-
 alias open-mplayer='open -a "MPlayer OSX Extended"'
+alias mute="osascript -e 'set volume 0'"
+
+function g() {
+    open -a Safari http://www.google.com/search\?q\=$1\&esrch\=BetaShortcuts\&ie\=utf-8\&oe\=utf-8
+}
