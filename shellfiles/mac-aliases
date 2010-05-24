@@ -13,5 +13,5 @@ alias open-mplayer='open -a "MPlayer OSX Extended"'
 alias mute="osascript -e 'set volume 0'"
 
 function g() {
-    open -a Safari http://www.google.com/search\?q\=$1\&esrch\=BetaShortcuts\&ie\=utf-8\&oe\=utf-8
+    open -a Safari "http://www.google.com/search?q=$*&esrch=BetaShortcuts&ie=utf-8&oe=utf-8"
 }
