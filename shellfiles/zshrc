@@ -12,7 +12,12 @@ bindkey '^u' backward-kill-line # in zsh ^u kills the whole line
 autoload -U colors
 colors
 setopt prompt_subst
-PROMPT='→ '
+if [ $(id -u `whoami`) -eq 0 ]; then
+	ROOT_PROMPT='# '
+else
+	ROOT_PROMPT=''
+fi
+PROMPT='%{$fg_bold[green]%}%{$ROOT_PROMPT%}%{$reset_color%}→ '
 RPROMPT='%{$fg_bold[green]%}%~%{$fg_bold[white]%}:%{$fg_bold[blue]%}%m %{$fg_bold[red]%}$(svn_status_prompt)%{$reset_color%}'
 
 ### COMPLETION ###
