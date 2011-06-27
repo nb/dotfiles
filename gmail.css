@@ -2,3 +2,10 @@ body, td, input, textarea, select {
 	font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 
+ins {
+	background-color: #cfc;
+}
+del {
+	background-color: #fcc;
+}
+
