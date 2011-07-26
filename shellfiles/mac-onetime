@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# disable Lion new window animation
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
+# disable Spaces animation
+defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES
