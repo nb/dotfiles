@@ -4,3 +4,5 @@
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
 # disable Spaces animation
 defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES
+# disable Mail.app animations
+defaults write com.apple.Mail DisableReplyAnimations -bool YES
