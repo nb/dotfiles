@@ -22,3 +22,6 @@ del {
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
+pre, code {
+	font-size: 1.3em;
+}
