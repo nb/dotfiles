@@ -6,3 +6,7 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
 defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES
 # disable Mail.app animations
 defaults write com.apple.Mail DisableReplyAnimations -bool YES
+# Fix iTunes arrows
+defaults write com.apple.iTunes show-store-arrow-links -bool YES
+defaults write com.apple.iTunes show-store-link-arrows -bool YES
+defaults write com.apple.iTunes invertStoreLinks -bool YES
