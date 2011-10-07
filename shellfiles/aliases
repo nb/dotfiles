@@ -10,6 +10,7 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias cd..='cd ..'
 alias ..='cd ..'
+alias tree='tree -C'
 
 ### SVN ALIASES ###
 alias v='svn diff | vim -'
