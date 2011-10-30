@@ -5,6 +5,9 @@ setopt AUTO_PUSHD # 'cd' is now cooler
 ### KEYBINDINGS ###
 bindkey -e
 bindkey '^u' backward-kill-line # in zsh ^u kills the whole line
+# make alt-<arrow> move between words
+bindkey "\e\e[D" backward-word
+bindkey "\e\e[C" forward-word
 
 ### LINE EDIT BINDINGS ###
 autoload -U edit-command-line
