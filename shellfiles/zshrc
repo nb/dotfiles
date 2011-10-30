@@ -6,6 +6,12 @@ setopt AUTO_PUSHD # 'cd' is now cooler
 bindkey -e
 bindkey '^u' backward-kill-line # in zsh ^u kills the whole line
 
+### LINE EDIT BINDINGS ###
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '\ee' edit-command-line
+bindkey '\eq' push-line-or-edit
+
 ### PROMPT ###
 # prompt shamelessly stolen from http://github.com/skanev/SHELLFILES/blob/master/zsh/config
 # sans the vcprompt, which doesn't help me much with subversion
