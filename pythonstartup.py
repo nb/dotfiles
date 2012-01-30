@@ -8,6 +8,7 @@ import re
 import time
 import datetime
 import random
+from random import randint, choice
 import operator
 import itertools
 
