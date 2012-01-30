@@ -15,7 +15,6 @@ fi
 
 function dotfile_load() {
     [ -r $SHELLFILES/$1 ] && . $SHELLFILES/$1
-	echo $PRIVATE_SHELLFILES/$1
     [ -r $PRIVATE_SHELLFILES/$1 ] && . $PRIVATE_SHELLFILES/$1
 }
 
