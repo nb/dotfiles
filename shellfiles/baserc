@@ -1,13 +1,22 @@
 if [ -z "$DOTFILES" ]; then
     DOTFILES="$HOME/dotfiles"
 fi
+if [ -z "$PRIVATE_DOTFILES" ]; then
+    PRIVATE_DOTFILES="$HOME/github/personal/dotfiles"
+fi
 
 if [ -z "$SHELLFILES" ]; then
     SHELLFILES="$DOTFILES/shellfiles"
 fi
 
+if [ -z "$PRIVATE_SHELLFILES" ]; then
+    PRIVATE_SHELLFILES="$PRIVATE_DOTFILES/shellfiles"
+fi
+
 function dotfile_load() {
     [ -r $SHELLFILES/$1 ] && . $SHELLFILES/$1
+	echo $PRIVATE_SHELLFILES/$1
+    [ -r $PRIVATE_SHELLFILES/$1 ] && . $PRIVATE_SHELLFILES/$1
 }
 
 if [[ "$SHELL" == "/bin/zsh" && "$0" != "bash" && $0 != "-bash" ]]; then
