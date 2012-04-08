@@ -4,3 +4,6 @@ editor= mate -wl1
 [user]
 name=Nikolay Bachiyski
 email=nb@nikolay.bg
+
+[github]
+user = nb
