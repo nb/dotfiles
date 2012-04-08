@@ -7,3 +7,8 @@ email=nb@nikolay.bg
 
 [github]
 user = nb
+
+[alias]
+co = checkout
+st = status
+ci = commit
