@@ -39,8 +39,6 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder ShowPathbar -bool true
 # Show Status bar in Finder
 defaults write com.apple.finder ShowStatusBar -bool true
-# Enable iTunes track notifications in the Dock
-defaults write com.apple.dock itunes-notifications -bool true
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
