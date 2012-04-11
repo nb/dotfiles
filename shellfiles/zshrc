@@ -53,3 +53,7 @@ setopt CORRECTALL # correct arguments, too
 autoload url-quote-magic
 zle -N self-insert url-quote-magic # auto-quote special chars in URLs
 WORDCHARS=`echo $WORDCHARS | sed 's/[\/=#_&;-]//g'` # add more word separators
+
+### AUTOJUMP ###
+export FPATH="$FPATH:/opt/local/share/zsh/site-functions/"
+. /opt/local/etc/profile.d/autojump.sh
