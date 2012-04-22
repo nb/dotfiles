@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -81,9 +83,6 @@ map <C-t> <Esc>:tabedit<CR>
 map <C-q> <Esc>:tabclose<CR>
 map QQ <Esc>:qa!<CR>
 
-" nice colorscheme
-colorscheme default
-
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
 highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
 highlight DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
@@ -97,5 +96,8 @@ vmap tn di _e('<Esc>pa')<Esc>
 vmap _ di<?php __('<Esc>pa'); ?><Esc>
 vmap _n di__(<Esc>pa)<Esc>
 vmap ta di<?php echo attribute_escape(__('<Esc>pa')); ?><Esc>
+
+set background=light
+colorscheme solarized
 
 set number
