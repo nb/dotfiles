@@ -97,3 +97,5 @@ vmap tn di _e('<Esc>pa')<Esc>
 vmap _ di<?php __('<Esc>pa'); ?><Esc>
 vmap _n di__(<Esc>pa)<Esc>
 vmap ta di<?php echo attribute_escape(__('<Esc>pa')); ?><Esc>
+
+set number
