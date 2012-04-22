@@ -10,7 +10,8 @@ Here are the suggested links:
 ~/dotfiles              -> dotfiles
 ~/.bashrc               -> dotfiles/shellfiles/sample-shellrc
 ~/.zshrc                -> dotfiles/shellfiles/sample-shellrc
-~/.vimrc                -> vimrc
+~/.vimrc                -> vim/vimrc.vim
+~/.vim                  -> vim
 ~/.ssh/config           -> ssh-config
 ~/.gitconfig            -> gitconfig
 ~/.subversion/config    -> gitconfig
