@@ -12,3 +12,5 @@ user = nb
 co = checkout
 st = status
 ci = commit
+[color]
+ui = always
