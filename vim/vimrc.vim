@@ -100,6 +100,8 @@ vmap ta di<?php echo attribute_escape(__('<Esc>pa')); ?><Esc>
 set background=light
 colorscheme solarized
 
+set guifont=Consolas:h14
+
 set number
 
 MapMeta 1 :tabnext 1<CR>
