@@ -101,3 +101,15 @@ set background=light
 colorscheme solarized
 
 set number
+
+MapMeta 1 :tabnext 1<CR>
+MapMeta 2 :tabnext 2<CR>
+MapMeta 3 :tabnext 3<CR>
+MapMeta 4 :tabnext 4<CR>
+MapMeta 5 :tabnext 5<CR>
+MapMeta 6 :tabnext 6<CR>
+MapMeta 7 :tabnext 7<CR>
+MapMeta 8 :tabnext 8<CR>
+MapMeta 9 :tabnext 9<CR>
+
+map <Space> :
