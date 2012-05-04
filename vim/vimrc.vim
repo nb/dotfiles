@@ -23,6 +23,7 @@ set mouse=a
 set ignorecase
 syntax on
 set hlsearch
+set vb
 
 filetype plugin indent on
 
