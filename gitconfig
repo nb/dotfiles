@@ -1,5 +1,6 @@
 [core]
 editor = mvim
+excludesfile = ~/.gitignore
 
 [user]
 name=Nikolay Bachiyski
