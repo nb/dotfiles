@@ -24,7 +24,7 @@ autoload -U colors
 colors
 setopt prompt_subst
 if [ $(id -u `whoami`) -eq 0 ]; then
-	ROOT_PROMPT='# '
+	ROOT_PROMPT='#'
 else
 	ROOT_PROMPT=''
 fi
