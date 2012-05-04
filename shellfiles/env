@@ -1,5 +1,4 @@
 export PATH="$PATH:$HOME/bin:/opt/local/bin:$HOME/pear/bin"
-export EDITOR=vim
 export VISUAL=vim
 
 export LC_ALL=en_US.UTF-8

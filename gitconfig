@@ -1,5 +1,5 @@
 [core]
-editor= mate -wl1
+editor = mvim
 
 [user]
 name=Nikolay Bachiyski

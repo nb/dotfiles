@@ -1,3 +1,5 @@
+export EDITOR=mvim
+
 export PATH="$PATH:/Applications/MAMP/Library/bin"
 export PATH="$PATH:$HOME/wordpress-i18n/tools/trunk"
 export PATH="$PATH:/usr/local/git/bin"
