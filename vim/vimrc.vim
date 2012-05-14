@@ -24,6 +24,8 @@ set ignorecase
 syntax on
 set hlsearch
 set vb
+set listchars=tab:▸\ ,eol:¬
+
 " remember undo changes between sessions
 if v:version >= 703
   set undofile
