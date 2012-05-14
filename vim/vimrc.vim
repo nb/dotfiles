@@ -32,6 +32,10 @@ if v:version >= 703
 endif
 " disable folding
 set nofoldenable
+" Visual line marker
+if v:version >= 703
+  set colorcolumn=72
+endif
 
 filetype plugin indent on
 
