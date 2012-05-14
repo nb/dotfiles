@@ -1,5 +1,5 @@
 [core]
-editor = mvim
+editor = vim
 excludesfile = ~/.gitignore
 
 [user]
