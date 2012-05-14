@@ -37,6 +37,9 @@ if v:version >= 703
   set colorcolumn=72
 endif
 
+" Source vimrc files after editing
+autocmd bufwritepost .vimrc source <afile>
+
 filetype plugin indent on
 
 autocmd FileType text setlocal textwidth=78
