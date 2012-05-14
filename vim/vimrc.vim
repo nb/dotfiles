@@ -28,6 +28,8 @@ set vb
 if v:version >= 703
   set undofile
 endif
+" disable folding
+set nofoldenable
 
 filetype plugin indent on
 
