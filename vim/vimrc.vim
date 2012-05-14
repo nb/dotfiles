@@ -24,6 +24,10 @@ set ignorecase
 syntax on
 set hlsearch
 set vb
+" remember undo changes between sessions
+if v:version >= 703
+  set undofile
+endif
 
 filetype plugin indent on
 
