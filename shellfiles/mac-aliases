@@ -10,6 +10,7 @@ alias rwls='open *.[rR][wW][lL]'
 
 alias log='tail -F /Applications/MAMP/logs/apache_error.log'
 alias open-mplayer='open -a "MPlayer OSX Extended"'
+alias om=open-mplayer
 alias mute="osascript -e 'set volume 0'"
 
 alias nginx-restart='sudo launchctl stop org.macports.nginx; sudo launchctl start org.macports.nginx'
