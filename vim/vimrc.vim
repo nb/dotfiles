@@ -9,8 +9,8 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-set viminfo='20,\"1024  
-set history=200	
+set viminfo='20,\"1024
+set history=200
 set ruler
 set showcmd
 set incsearch
@@ -55,7 +55,7 @@ autocmd BufReadPost *
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
 highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
 highlight DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
-highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black 
+highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
 
 set t_Co=256
 set background=light
