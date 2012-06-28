@@ -13,5 +13,9 @@ user = nb
 co = checkout
 st = status
 ci = commit
+
+[push]
+default = tracking
+
 [color]
 ui = always
