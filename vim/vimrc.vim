@@ -6,6 +6,11 @@ runtime mapmeta.vim
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" enable loading filetype and indentation plugins
+filetype plugin on
+filetype indent on
+
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -39,8 +44,6 @@ endif
 
 " Source vimrc files after editing
 autocmd bufwritepost .vimrc source <afile>
-
-filetype plugin indent on
 
 autocmd FileType text setlocal textwidth=72
 
@@ -76,3 +79,5 @@ MapMeta 8 :tabnext 8<CR>
 MapMeta 9 :tabnext 9<CR>
 
 map <Space> :
+
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
