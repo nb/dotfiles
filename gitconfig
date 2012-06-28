@@ -15,7 +15,7 @@ st = status
 ci = commit
 
 [push]
-default = tracking
+default = upstream
 
 [color]
 ui = always
