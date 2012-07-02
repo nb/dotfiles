@@ -20,6 +20,7 @@ alias cleansvn='svn st | grep ^\? | cut -f 8 -d " " | xargs rm'
 alias addsvn='svn st | grep ^\? | cut -d " " -f 8 | xargs svn add'
 
 ### MISC ###
+alias reload='source ~/.zshrc'
 alias cleanpyc='find . -name "*.pyc" -delete'
 alias s="gpg-edit $HOME/secrets.gpg"
 alias killjobs='jobs -l | perl -pne '\''/\S+\s+(\d+)/; $_ = " $1" if($1);'\'' | xargs kill -9'
