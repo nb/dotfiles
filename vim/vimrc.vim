@@ -81,4 +81,8 @@ MapMeta 9 :tabnext 9<CR>
 
 map <Space> :
 
+autocmd FileType php MapMeta % :w!<CR>:!php %<CR>
+autocmd FileType php MapMeta ^ :w!<CR>:!php -l %<CR>
+autocmd FileType php MapMeta * :w!<CR>:!phpunit %<CR>
+autocmd FileType php set keywordprg=phpnetman
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
