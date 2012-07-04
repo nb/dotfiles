@@ -44,6 +44,7 @@ endif
 
 " Source vimrc files after editing
 autocmd bufwritepost .vimrc source <afile>
+autocmd bufwritepost vimrc.vim source <afile>
 
 autocmd FileType text setlocal textwidth=72
 
