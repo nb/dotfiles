@@ -86,3 +86,5 @@ autocmd FileType php MapMeta ^ :w!<CR>:!php -l %<CR>
 autocmd FileType php MapMeta * :w!<CR>:!phpunit %<CR>
 autocmd FileType php set keywordprg=phpnetman
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+let g:syntastic_phpcs_disable = 1
