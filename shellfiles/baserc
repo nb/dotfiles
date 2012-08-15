@@ -38,3 +38,4 @@ dotfile_load ${SHELLFILES_OS}-env
 dotfile_load aliases
 dotfile_load ${SHELLFILES_SHELL}-aliases
 dotfile_load ${SHELLFILES_OS}-aliases
+dotfile_load init
