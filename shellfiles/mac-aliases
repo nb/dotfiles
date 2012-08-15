@@ -8,7 +8,7 @@ alias jpgs='open *.[jJ][pP][gG]'
 alias dngs='open *.[dD][nN][gG]'
 alias rwls='open *.[rR][wW][lL]'
 
-alias log='tail -F /tmp/php_errors.log'
+alias log='tail -F /var/log/php/php_errors.log'
 alias open-mplayer='open -a "MPlayer OSX Extended"'
 alias om=open-mplayer
 alias mute="osascript -e 'set volume 0'"
