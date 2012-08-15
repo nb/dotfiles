@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:/opt/local/bin:$HOME/pear/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.rbenv/bin:$HOME/pear/bin:/usr/local/sbin:$PATH"
 export VISUAL=vim
 
 export LC_ALL=en_US.UTF-8
