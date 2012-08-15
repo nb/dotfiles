@@ -63,8 +63,9 @@ zle -N self-insert url-quote-magic # auto-quote special chars in URLs
 WORDCHARS=`echo $WORDCHARS | sed 's/[\/=#_&;-]//g'` # add more word separators
 
 ### AUTOJUMP ###
-export FPATH="$FPATH:/opt/local/share/zsh/site-functions/"
-. /opt/local/etc/profile.d/autojump.sh
+if [ -f `brew --prefix`/etc/autojump ]; then
+	  . `brew --prefix`/etc/autojump
+  fi
 
 ### perl's local::lib ###
 eval $(perl -I/Users/nb/perl5/lib/perl5 -Mlocal::lib)
