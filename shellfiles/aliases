@@ -24,7 +24,7 @@ alias ack="ack --pager='less -FRX' --colour"
 # ack function
 af() { ack --php --js --before-context=9 "function &?$*|$*\s*[:=]\s*function\("; }
 # ack function complete
-afc() { af "$*\(" }
+afc() { af "$*\("; }
 
 ### MISC ###
 alias cleanpyc='find . -name "*.pyc" -delete'
