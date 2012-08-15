@@ -88,3 +88,6 @@ autocmd FileType php set keywordprg=phpnetman
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 let g:syntastic_phpcs_disable = 1
+
+" automatically source vim sessions so I can open them with the finder
+ au BufRead *.vis so %
