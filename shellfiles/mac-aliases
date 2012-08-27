@@ -9,8 +9,7 @@ alias dngs='open *.[dD][nN][gG]'
 alias rwls='open *.[rR][wW][lL]'
 
 alias log='tail -F /var/log/php/php_errors.log'
-alias open-mplayer='open -a "MPlayer OSX Extended"'
-alias om=open-mplayer
+alias mplayer='open -a "MPlayer OSX Extended"'
 alias mute="osascript -e 'set volume 0'"
 
 alias nginx-restart='sudo launchctl stop org.macports.nginx; sudo launchctl start org.macports.nginx'
