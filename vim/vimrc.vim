@@ -30,7 +30,7 @@ syntax on
 set hlsearch
 set vb
 set listchars=tab:▸\ ,eol:¬
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store
 
 " remember undo changes between sessions
 if v:version >= 703
