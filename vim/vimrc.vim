@@ -30,6 +30,7 @@ syntax on
 set hlsearch
 set vb
 set listchars=tab:▸\ ,eol:¬
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " remember undo changes between sessions
 if v:version >= 703
@@ -91,3 +92,6 @@ let g:syntastic_phpcs_disable = 1
 
 " automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
+
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.min\.\(js\|css\)$'
