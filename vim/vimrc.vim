@@ -81,6 +81,7 @@ MapMeta 8 :tabnext 8<CR>
 MapMeta 9 :tabnext 9<CR>
 
 map <Space> :
+:nnoremap <CR> :nohlsearch<cr>
 
 autocmd FileType php MapMeta % :w!<CR>:!php %<CR>
 autocmd FileType php MapMeta ^ :w!<CR>:!php -l %<CR>
