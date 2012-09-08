@@ -18,3 +18,6 @@ alias fpm-restart='sudo launchctl stop org.macports.php-fpm; sudo launchctl star
 function g() {
     open -a Safari "http://www.google.com/search?q=$*&esrch=BetaShortcuts&ie=utf-8&oe=utf-8"
 }
+
+alias liveblog='cd ~/wordpress/trunk/wp-content/plugins/liveblog; $EDITOR .'
+alias pulse='cd ~/sandbox/pulse; $EDITOR .'
