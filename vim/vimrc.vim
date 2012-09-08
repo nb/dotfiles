@@ -29,8 +29,9 @@ set ignorecase
 syntax on
 set hlsearch
 set vb
-set listchars=tab:▸\ ,eol:¬
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store
+set list
+set listchars=tab:▸\ ,
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store,.*.un~
 
 " remember undo changes between sessions
 if v:version >= 703
