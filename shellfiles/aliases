@@ -41,4 +41,7 @@ function wp-yui-min {
 alias wp-min-css='wp-yui-min css'
 alias wp-min-js='wp-yui-min js'
 
+alias g=git
+alias gpr='git pull --rebase'
+
 alias shellfiles='cd ~/dotfiles/shellfiles; $EDITOR .'
