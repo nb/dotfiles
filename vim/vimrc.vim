@@ -19,7 +19,11 @@ set history=200
 set ruler
 set showcmd
 set incsearch
-set nobackup
+set backup
+set undofile
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set ts=4
 set sw=4
 set fileencodings=utf8
