@@ -32,6 +32,7 @@ set vb
 set list
 set listchars=tab:▸\ ,
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store,.*.un~
+set cursorline
 
 " remember undo changes between sessions
 if v:version >= 703
