@@ -13,6 +13,7 @@ user = nb
 co = checkout
 st = status
 ci = commit
+lol = log --graph --decorate --pretty=oneline --abbrev-commit
 
 [push]
 default = upstream
