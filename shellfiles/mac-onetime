@@ -61,5 +61,3 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 # Desktop: enable snap-to-grid for desktop icons
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-
-
