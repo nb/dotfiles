@@ -49,9 +49,6 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Enable text selection in quick view
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE
-# disable hibernate, because sometimes the stupid machine won't wake up from sleep
-# sudo pmset -a hibernatemode 0
-
 # Show remaining battery time; hide percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 defaults write com.apple.menuextra.battery ShowTime -string "YES"
