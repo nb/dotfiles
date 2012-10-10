@@ -87,7 +87,8 @@ map <Space> :
 
 autocmd FileType php MapMeta % :w!<CR>:!php %<CR>
 autocmd FileType php MapMeta ^ :w!<CR>:!php -l %<CR>
-autocmd FileType php MapMeta * :w!<CR>:!phpunit %<CR>
+autocmd FileType php MapMeta & :w!<CR>:!recurse_phpunit %:h --testdox --no-colors %:p<CR>
+autocmd FileType php MapMeta * :w!<CR>:!recurse_phpunit %:h --no-colors %:p<CR>
 autocmd FileType php set keywordprg=phpnetman
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
