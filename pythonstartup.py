@@ -1,18 +1,18 @@
 from __future__ import division
 from __future__ import with_statement
 
-import math
 import os
+import re
 import csv
 import sys
 import glob
-import re
+import math
 import time
-import datetime
 import random
-from random import randint, choice
+import datetime
 import operator
 import itertools
+from random import randint, choice
 
 try:
 	import readline
