@@ -110,3 +110,7 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
+
+" If we backup temporary files often automated editing tools like the crontab
+" editor get confused
+set backupskip=/tmp/*,/private/tmp/*"
