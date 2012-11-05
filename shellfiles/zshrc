@@ -29,7 +29,7 @@ else
 	ROOT_PROMPT=''
 fi
 PROMPT='%{$fg_bold[green]%}%{$ROOT_PROMPT%}%{$reset_color%}→ '
-RPROMPT='%{$fg_bold[green]%}%~%{$fg_bold[white]%}:%{$fg_bold[blue]%}%m %{$fg_bold[red]%}$(svn_status_prompt)%{$reset_color%}'
+RPROMPT='%{$fg_bold[green]%}%~%{$fg_bold[white]%}:%{$fg_bold[blue]%}%m%{$reset_color%}'
 
 ### COMPLETION ###
 autoload compinit
@@ -52,10 +52,6 @@ setopt HIST_IGNORE_SPACE # don't keep in history commands, which start with spac
 setopt APPEND_HISTORY # write history only when closing
 setopt EXTENDED_HISTORY # add more info
 setopt HIST_FCNTL_LOCK # smarter locking
-
-### SPELLING CORRECTION
-setopt CORRECT # type zhs and see: zsh: correct 'zhs' to 'zsh' [nyae]?
-setopt CORRECTALL # correct arguments, too
 
 ### MISC ###
 autoload url-quote-magic
