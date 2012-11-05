@@ -18,7 +18,7 @@ function dotfile_load() {
     [ -r $PRIVATE_SHELLFILES/$1 ] && . $PRIVATE_SHELLFILES/$1
 }
 
-if [[ "$SHELL" == "/bin/zsh" && "$0" != "bash" && $0 != "-bash" ]]; then
+if [[ `basename $SHELL` == "zsh" && "$0" != "bash" && $0 != "-bash" ]]; then
     SHELLFILES_SHELL=zsh
 else
     SHELLFILES_SHELL=bash
