@@ -44,3 +44,4 @@ alias wp-min-js='wp-yui-min js'
 alias g=git
 alias gpr='git pull --rebase'
 alias gcm='git checkout master'
+alias pinking-shears='ack --print0 -f --php --js --css | xargs -0 perl -pi -e "s/[\t ]+$//g"'
