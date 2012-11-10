@@ -113,6 +113,10 @@ au FocusLost * :wa
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.min\.\(js\|css\)$'
 
+let g:gist_detect_filetype = 1
+let g:gist_clip_command = 'pbcopy'
+let g:gist_open_browser_after_post = 1
+
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
