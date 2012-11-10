@@ -26,6 +26,10 @@ try
 catch
 endtry
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+" If we backup temporary files often automated editing tools like the crontab
+" editor get confused
+set backupskip=/tmp/*,/private/tmp/*"
+set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set ts=4
 set sw=4
@@ -113,7 +117,3 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
-
-" If we backup temporary files often automated editing tools like the crontab
-" editor get confused
-set backupskip=/tmp/*,/private/tmp/*"
