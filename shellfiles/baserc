@@ -46,3 +46,6 @@ dotfile_load ${SHELLFILES_OS}-aliases
 dotfile_load ${SHELLFILES_HOST}-aliases
 
 dotfile_load init
+dotfile_load ${SHELLFILES_SHELL}-init
+dotfile_load ${SHELLFILES_OS}-init
+dotfile_load ${SHELLFILES_HOST}-init
