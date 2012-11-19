@@ -20,9 +20,12 @@ set ruler
 set showcmd
 set incsearch
 set backup
-set undofile
+try
+	set undofile
+	set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+catch
+endtry
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set ts=4
 set sw=4
