@@ -13,6 +13,8 @@ user = nb
 co = checkout
 st = status
 ci = commit
+pish = push
+posh = push
 lol = log --graph --decorate --pretty=oneline --abbrev-commit
 
 [push]
