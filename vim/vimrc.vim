@@ -20,16 +20,14 @@ set ruler
 set showcmd
 set incsearch
 set backup
-try
+if v:version >= 703
 	set undofile
 	set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-catch
-endtry
+endif
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " If we backup temporary files often automated editing tools like the crontab
 " editor get confused
 set backupskip=/tmp/*,/private/tmp/*"
-set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set ts=4
 set sw=4
@@ -45,10 +43,6 @@ set listchars=tab:▸\ ,
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store,.*.un~
 set cursorline
 
-" remember undo changes between sessions
-if v:version >= 703
-  set undofile
-endif
 " disable folding
 set nofoldenable
 " Visual line marker
