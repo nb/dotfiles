@@ -42,6 +42,8 @@ set list
 set listchars=tab:▸\ ,
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store,.*.un~
 set cursorline
+" use system clipboard on OSX
+set clipboard=unnamed
 
 " disable folding
 set nofoldenable
