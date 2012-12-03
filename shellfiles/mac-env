@@ -1,9 +1,3 @@
 export EDITOR=mvim
 export NODE_PATH="/usr/local/lib/node_modules"
 export PYTHONPATH="/usr/local/lib/svn-python:$PYTHONPATH"
-
-### AUTOJUMP ###
-[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-### perl's local::lib ###
-eval $(perl -I/Users/nb/perl5/lib/perl5 -Mlocal::lib)
