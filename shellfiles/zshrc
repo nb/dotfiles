@@ -57,9 +57,3 @@ setopt HIST_FCNTL_LOCK # smarter locking
 autoload url-quote-magic
 zle -N self-insert url-quote-magic # auto-quote special chars in URLs
 WORDCHARS=`echo $WORDCHARS | sed 's/[\/=#_&;-]//g'` # add more word separators
-
-### AUTOJUMP ###
-[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-### perl's local::lib ###
-eval $(perl -I/Users/nb/perl5/lib/perl5 -Mlocal::lib)
