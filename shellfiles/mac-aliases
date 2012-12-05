@@ -15,6 +15,8 @@ alias mute="osascript -e 'set volume 0'"
 alias nginx-restart='sudo launchctl stop org.macports.nginx; sudo launchctl start org.macports.nginx'
 alias fpm-restart='sudo launchctl stop org.macports.php-fpm; sudo launchctl start org.macports.php-fpm'
 
+alias dnsflush='sudo killall -HUP mDNSResponder'
+
 function g() {
     open -a Safari "http://www.google.com/search?q=$*&esrch=BetaShortcuts&ie=utf-8&oe=utf-8"
 }
