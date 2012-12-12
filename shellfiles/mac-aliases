@@ -3,6 +3,8 @@ alias ls='ls -G'
 
 alias o='open .'
 
+alias gitx='open -a GitX .'
+
 # open photos in a directory
 alias jpgs='open *.[jJ][pP][gG]'
 alias dngs='open *.[dD][nN][gG]'
