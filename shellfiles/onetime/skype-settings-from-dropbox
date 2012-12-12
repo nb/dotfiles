@@ -1,0 +1,3 @@
+#!/bin/sh
+rm -rf ~/Library/Application\ Support/Skype
+ln -s ~/Dropbox/Skype ~/Library/Application\ Support
