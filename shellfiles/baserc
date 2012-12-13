@@ -30,7 +30,7 @@ else
     SHELLFILES_OS=linux
 fi
 
-SHELLFILES_HOST=`hostname`
+SHELLFILES_HOST=`hostname | sed 's/\.local$//'`
 
 dotfile_load lib
 dotfile_load ${SHELLFILES_SHELL}rc
