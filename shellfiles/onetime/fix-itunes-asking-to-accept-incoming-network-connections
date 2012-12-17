@@ -1,0 +1,15 @@
+#!/bin/sh
+# see http://www.mikesel.info/fixed-do-you-want-the-application-itunes-app-to-accept-incoming-network-connections/
+
+codesign -vvv /Applications/iTunes.app/ > itunes-files-to-remove
+if [[ $? == 0 ]] ; then
+	echo "It all looks good. Quitting..."
+	exit 0
+fi
+perl -i -pne 's/resource added: //i' itunes-files-to-remove
+echo 'We are going to remove those files, which don''t belong to Itunes:'
+read -p "OK? $foo? [yn]" answer
+if [[ $answer != y ]] ; then
+	exit 1
+fi
+for f in `cat itunes-files-to-remove`; do sudo rm -f $f; done
