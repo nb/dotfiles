@@ -11,3 +11,5 @@ export LANG=en_US.UTF-8
 
 export PYTHONPATH="$PYTHONPATH:$HOME/lib/python:$HOME/pyfmi/site/lib/python"
 export PYTHONSTARTUP="$DOTFILES/pythonstartup.py"
+
+export VCPROMPT_FORMAT="[%b%m%u]"
