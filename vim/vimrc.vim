@@ -89,6 +89,7 @@ MapMeta 7 :tabnext 7<CR>
 MapMeta 8 :tabnext 8<CR>
 MapMeta 9 :tabnext 9<CR>
 
+let mapleader = ","
 map <Space> :
 :nnoremap <CR> :nohlsearch<cr>
 
