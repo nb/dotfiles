@@ -118,3 +118,6 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
+
+" Add Spaces inside parentheses, A8C Style
+map <Leader>s ci(<space><space><Esc>hp)
