@@ -1,6 +1,1 @@
 alias reload='source ~/.zshrc'
-alias -s avi=mplayer
-alias -s mp4=mplayer
-alias -s wmv=mplayer
-alias -s mkv=mplayer
-alias -s mov=mplayer
