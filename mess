@@ -1,11 +1,11 @@
 [default]
 
 # ssh connection info
-user = niichavo
+user = nb
 host = nikolay.bg
 
 # the path on the remote server, where to copy the shared files
-remote-path = vhosts/nikolay.bg/mess/
+remote-path = /var/www/nb/nikolay.bg/mess/
 
 # the url template for your files, the filename will be appended in the end
 # this url should correspond to the remote path above
