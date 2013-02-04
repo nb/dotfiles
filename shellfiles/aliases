@@ -48,3 +48,8 @@ alias g=git
 alias gpr='git pull --rebase'
 alias gcm='git checkout master'
 alias pinking-shears='ack --print0 -f --php --js --css | xargs -0 perl -pi -e "s/[\t ]+$//g"'
+alias makemos='ls *.po | xargs basename -s .po |  xargs -I % msgfmt %.po -o %.mo'
+
+function editexec {
+	$EDITOR `which $1`
+}
