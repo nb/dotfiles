@@ -60,4 +60,9 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # zsh from Brew needs to fix Apple misconfiguration
+sudo mv /etc/zprofile /etc/zprofile.bak
 sudo ln -s /etc/zshenv /etc/zprofile
+
+# reduce wake time by going to hibernate after 12 hours of sleep
+# instead of the default 70 minutes
+sudo pmset -a standbydelay $((12 * 3600))
