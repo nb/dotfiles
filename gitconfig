@@ -21,4 +21,7 @@ lol = log --graph --decorate --pretty=oneline --abbrev-commit
 default = tracking
 
 [color]
-ui = always
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
