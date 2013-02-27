@@ -25,3 +25,5 @@ default = tracking
 	diff = auto
 	status = auto
 	branch = auto
+[pull]
+	rebase = true
