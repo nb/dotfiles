@@ -1,24 +1,24 @@
 [core]
-editor = vim
-excludesfile = ~/.gitignore
+	editor = vim
+	excludesfile = ~/.gitignore
 
 [user]
-name=Nikolay Bachiyski
-email=nb@nikolay.bg
+	name = Nikolay Bachiyski
+	email = nb@nikolay.bg
 
 [github]
-user = nb
+	user = nb
 
 [alias]
-co = checkout
-st = status
-ci = commit
-pish = push
-posh = push
-lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	co = checkout
+	st = status
+	ci = commit
+	pish = push
+	posh = push
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 
 [push]
-default = tracking
+	default = tracking
 
 [color]
 	ui = auto
