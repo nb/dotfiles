@@ -16,6 +16,7 @@
 	pish = push
 	posh = push
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	before-push = rebase -i
 
 [push]
 	default = tracking
