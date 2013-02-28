@@ -35,6 +35,8 @@ set fileencodings=utf8
 set enc=utf8
 set mouse=a
 set ignorecase
+" Switch to case-sensitive search if term has uppercase letters
+set smartcase
 syntax on
 set hlsearch
 set vb
