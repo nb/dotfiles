@@ -10,9 +10,12 @@
 	user = nb
 
 [alias]
+	aa = add --all
 	co = checkout
-	st = status
+	st = status -sb
 	ci = commit
+	di = diff
+	dc = diff --cached
 	pish = push
 	posh = push
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
