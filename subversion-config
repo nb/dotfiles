@@ -21,4 +21,5 @@ Makefile = svn:eol-style=native
 *.php = svn:eol-style=native
 *.js = svn:eol-style=native
 *.css = svn:eol-style=native
+*.pdf = svn:mime-type=application/pdf
 
