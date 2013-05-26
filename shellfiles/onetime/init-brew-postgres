@@ -1,0 +1,6 @@
+#!/bin/sh
+initdb /usr/local/var/postgres -E utf8
+createuser -d -w root
+createdb root
+createdb nb
+psql -c 'ALTER USER root WITH SUPERUSER;' -U nb 
