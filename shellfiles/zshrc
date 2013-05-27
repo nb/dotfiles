@@ -28,8 +28,14 @@ if [ $(id -u `whoami`) -eq 0 ]; then
 else
 	ROOT_PROMPT=''
 fi
-PROMPT='%{$fg_bold[green]%}%{$ROOT_PROMPT%}%{$reset_color%}→ '
-RPROMPT='%{$fg_bold[green]%}%~%{$fg_bold[white]%}:%{$fg_bold[blue]%}%m %{$fg_bold[red]%}$(vcprompt)%{$reset_color%}'
+
+if [ -d ~/.impromptu ]
+then
+	source impromptu
+else
+	PROMPT='%{$fg_bold[green]%}%{$ROOT_PROMPT%}%{$reset_color%}→ '
+	RPROMPT='%{$fg_bold[green]%}%~%{$fg_bold[white]%}:%{$fg_bold[blue]%}%m %{$fg_bold[red]%}$(vcprompt)%{$reset_color%}'
+fi
 
 ### COMPLETION ###
 autoload compinit
