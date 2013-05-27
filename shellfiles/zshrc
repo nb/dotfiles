@@ -33,7 +33,7 @@ RPROMPT='%{$fg_bold[green]%}%~%{$fg_bold[white]%}:%{$fg_bold[blue]%}%m %{$fg_bol
 
 ### COMPLETION ###
 autoload compinit
-compinit
+compinit -u
 
 # enable cache for slow commands
 zstyle ':completion:*' use-cache on
