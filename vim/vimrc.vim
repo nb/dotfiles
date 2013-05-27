@@ -117,6 +117,9 @@ let g:gist_detect_filetype = 1
 let g:gist_clip_command = 'pbcopy'
 let g:gist_open_browser_after_post = 1
 
+let g:html_number_lines = 0
+let g:copy_as_rtf_using_local_buffer = 1
+
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
