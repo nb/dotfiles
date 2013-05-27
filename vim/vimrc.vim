@@ -49,6 +49,9 @@ set clipboard=unnamed
 set winminheight=0
 set winminwidth=0
 
+" always show status bar
+set laststatus=2
+
 " disable folding
 set nofoldenable
 " Visual line marker
