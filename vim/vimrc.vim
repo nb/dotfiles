@@ -45,6 +45,10 @@ set cursorline
 " use system clipboard on OSX
 set clipboard=unnamed
 
+" don't limit window dimensions
+set winminheight=0
+set winminwidth=0
+
 " disable folding
 set nofoldenable
 " Visual line marker
