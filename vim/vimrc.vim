@@ -126,4 +126,12 @@ map <Up> <Nop>
 map <Down> <Nop>
 
 " Add Spaces inside parentheses, A8C Style
-map <Leader>s ci(<space><space><Esc>hp)
+map <Leader>s ci(<space><space><Esc>hp
+
+au! BufNewFile,BufRead *.lecture setf lecture
+autocmd FileType lecture setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
+autocmd FileType markdown setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2 textwidth=72
+
+au! BufNewFile,BufRead *.coffee setf coffee
+autocmd FileType coffee setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
