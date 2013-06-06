@@ -20,8 +20,8 @@ module.exports = (Impromptu, section) ->
 
   section 'pwd',
     content: system.prettyPwd
-    #background: 'blue'
-    #foreground: 'white'
+    background: 'blue'
+    foreground: 'white'
 
   section 'git:in',
     when: git.branch
