@@ -136,4 +136,7 @@ autocmd FileType markdown setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=
 au! BufNewFile,BufRead *.coffee setf coffee
 autocmd FileType coffee setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
+au! BufNewFile,BufRead *.json setf json
+autocmd FileType json setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
 nmap <leader>md :!/usr/local/bin/markdown % \| pbcopy<cr>
