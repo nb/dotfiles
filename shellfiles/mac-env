@@ -3,7 +3,6 @@ export NODE_PATH="/usr/local/lib/node_modules"
 export PYTHONPATH="/usr/local/lib/svn-python:$PYTHONPATH"
 export COMPOSER_LIB_PATH="$HOME/lib/php"
 
-export PATH="/usr/local/share/python:$PATH"
 export PATH="$(brew --prefix php54)/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$COMPOSER_LIB_PATH/bin:$PATH"
