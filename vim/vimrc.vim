@@ -1,10 +1,33 @@
-call pathogen#infect()
-
 runtime mapmeta.vim
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'nb/vim-trailing-whitespace'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git.git'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
+Bundle 'groenewege/vim-less'
+Bundle 'edsono/vim-matchit'
+Bundle 'ap/vim-css-color'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'stephpy/vim-yaml'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/greper.vim'
+Bundle 'rizzatti/dash.vim'
+Bundle 'zerowidth/vim-copy-as-rtf'
+Bundle 'pangloss/vim-javascript'
 
 " enable loading filetype and indentation plugins
 filetype plugin on
