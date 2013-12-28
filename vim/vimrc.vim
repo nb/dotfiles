@@ -28,6 +28,8 @@ Bundle 'rizzatti/greper.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'zerowidth/vim-copy-as-rtf'
 Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'mikewest/vimroom'
 
 " enable loading filetype and indentation plugins
 filetype plugin on
