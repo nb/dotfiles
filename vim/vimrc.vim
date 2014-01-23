@@ -9,6 +9,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'nb/vim-trailing-whitespace'
 Bundle 'kien/ctrlp.vim'
@@ -30,6 +31,10 @@ Bundle 'zerowidth/vim-copy-as-rtf'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'mikewest/vimroom'
+Bundle 'rayburgemeestre/phpfolding.vim'
+Bundle 'goldfeld/vim-seek'
+Bundle 'mhinz/vim-signify'
+Bundle 'danro/rename.vim'
 
 " enable loading filetype and indentation plugins
 filetype plugin on
