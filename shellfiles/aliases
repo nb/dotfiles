@@ -19,13 +19,6 @@ alias t='svn st --ignore-externals'
 alias cleansvn='svn st | grep ^\? | cut -f 8 -d " " | xargs rm'
 alias addsvn='svn st | grep ^\? | cut -d " " -f 8 | xargs svn add'
 
-### ACK ALIASES ###
-alias ack="ack --pager='less -FRX' --colour"
-# ack function
-af() { ack --php --js --before-context=9 "function &?$*|$*\s*[:=]\s*function\("; }
-# ack function complete
-afc() { af "$*\("; }
-
 ### MISC ###
 alias cleanpyc='find . -name "*.pyc" -delete'
 alias killjobs='jobs -l | perl -pne '\''/\S+\s+(\d+)/; $_ = " $1" if($1);'\'' | xargs kill -9'
