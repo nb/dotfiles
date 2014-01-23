@@ -34,13 +34,6 @@ alias cleandsstore='find . -name ".DS_Store" -delete'
 alias cleandotsvn='find . -name ".svn" -exec rm -rf {} \;'
 alias d='du -csm -- * | sort -n | tee .d-`date +"%Y-%m-%dx%H:%M:%S"`'
 
-function wp-yui-min {
-	java -jar ~/wordpress/bin/yuicompressor-2.4.2/build/yuicompressor-2.4.2.jar -v --type $1 -o wp-admin/$1/$2.$1 wp-admin/$1/$2.dev.$1
-}
-
-alias wp-min-css='wp-yui-min css'
-alias wp-min-js='wp-yui-min js'
-
 alias g=git
 alias gpr='git pull --rebase'
 alias gcm='git checkout master'
