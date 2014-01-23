@@ -19,16 +19,17 @@ alias t='svn st --ignore-externals'
 alias cleansvn='svn st | grep ^\? | cut -f 8 -d " " | xargs rm'
 alias addsvn='svn st | grep ^\? | cut -d " " -f 8 | xargs svn add'
 
+### GIT ALIASES ###
+alias g=git
+alias gpr='git pull --rebase'
+alias gcm='git checkout master'
+
 ### MISC ###
 alias cleanpyc='find . -name "*.pyc" -delete'
 alias killjobs='jobs -l | perl -pne '\''/\S+\s+(\d+)/; $_ = " $1" if($1);'\'' | xargs kill -9'
 alias cleandsstore='find . -name ".DS_Store" -delete'
 alias cleandotsvn='find . -name ".svn" -exec rm -rf {} \;'
 alias d='du -csm -- * | sort -n | tee .d-`date +"%Y-%m-%dx%H:%M:%S"`'
-
-alias g=git
-alias gpr='git pull --rebase'
-alias gcm='git checkout master'
 alias pinking-shears='ack --print0 -f --php --js --css | xargs -0 perl -pi -e "s/[\t ]+$//g"'
 alias makemos='ls *.po | xargs basename -s .po |  xargs -I % msgfmt %.po -o %.mo'
 
