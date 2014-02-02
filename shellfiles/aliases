@@ -11,6 +11,7 @@ alias cp='cp -i'
 alias cd..='cd ..'
 alias ..='cd ..'
 alias tree='tree -C'
+alias ec="$EDITOR ."
 
 ### SVN ALIASES ###
 alias v='svn diff | vim -'
