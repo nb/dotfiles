@@ -134,7 +134,8 @@ autocmd FileType php MapMeta & :w!<CR>:!recurse_phpunit %:h --testdox %:p<CR>
 autocmd FileType php MapMeta * :w!<CR>:!recurse_phpunit %:h %:p<CR>
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-let g:syntastic_phpcs_disable = 1
+" disable phpcs
+let g:syntastic_php_checkers = ['php', 'phpmd']
 
 " automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
