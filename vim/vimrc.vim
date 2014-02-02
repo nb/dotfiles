@@ -171,3 +171,4 @@ au! BufNewFile,BufRead *.json setf json
 autocmd FileType json setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 nmap <leader>md :!/usr/local/bin/markdown % \| pbcopy<cr>
+nmap <leader>mr :!echo "<meta charset='UTF-8'>" > /tmp/vim-md.html && /usr/local/bin/markdown % >> /tmp/vim-md.html && open /tmp/vim-md.html<cr>
