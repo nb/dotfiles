@@ -130,8 +130,8 @@ map <Space> :
 
 autocmd FileType php MapMeta % :w!<CR>:!php %<CR>
 autocmd FileType php MapMeta ^ :w!<CR>:!php -l %<CR>
-autocmd FileType php MapMeta & :w!<CR>:!recurse_phpunit %:h --testdox --no-colors %:p<CR>
-autocmd FileType php MapMeta * :w!<CR>:!recurse_phpunit %:h --no-colors %:p<CR>
+autocmd FileType php MapMeta & :w!<CR>:!recurse_phpunit %:h --testdox %:p<CR>
+autocmd FileType php MapMeta * :w!<CR>:!recurse_phpunit %:h %:p<CR>
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 let g:syntastic_phpcs_disable = 1
