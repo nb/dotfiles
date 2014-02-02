@@ -161,7 +161,7 @@ map <Leader>s ci(<space><space><Esc>hp
 au! BufNewFile,BufRead *.lecture setf lecture
 autocmd FileType lecture setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
-autocmd FileType markdown setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2 textwidth=72
+autocmd FileType markdown setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 au! BufNewFile,BufRead *.coffee setf coffee
 autocmd FileType coffee setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
