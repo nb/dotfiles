@@ -4,6 +4,7 @@ alias -s wmv=mplayer
 alias -s mkv=mplayer
 alias -s mov=mplayer
 alias -s mpg=mplayer
+alias -s m4v=mplayer
 
 alias -s pdf='open -a Preview'
 
