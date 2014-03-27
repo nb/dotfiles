@@ -5,6 +5,7 @@ alias l=ls
 alias sl=ls
 alias ll='ls -lh'
 alias la='ls -A'
+alias lt='ll -tr'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
