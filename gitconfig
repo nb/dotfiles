@@ -29,5 +29,6 @@
 	diff = auto
 	status = auto
 	branch = auto
+	interactive = auto
 [pull]
 	rebase = true
