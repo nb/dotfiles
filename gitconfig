@@ -20,6 +20,8 @@
 	posh = push
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	before-push = rebase -i
+	unstage = reset HEAD
+	uncommit = reset --soft HEAD^
 
 [push]
 	default = tracking
