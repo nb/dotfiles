@@ -22,6 +22,7 @@
 	before-push = rebase -i
 	unstage = reset HEAD
 	uncommit = reset --soft HEAD^
+	move-branch-pointer = update-ref -m "reset: Reset branch to new commit"
 
 [push]
 	default = tracking
