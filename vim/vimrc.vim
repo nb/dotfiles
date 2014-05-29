@@ -145,7 +145,7 @@ au BufRead *.vis so %
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_root_markers = ['.vimproject']
 let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.min\.\(js\|css\)\|build$'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.min\.\(js\|css\)\|build\|vendor\|node_modules$'
 
 let g:gist_detect_filetype = 1
 let g:gist_clip_command = 'pbcopy'
