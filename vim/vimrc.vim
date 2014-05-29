@@ -167,6 +167,7 @@ autocmd FileType lecture setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 autocmd FileType markdown setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType mkd setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+let g:vim_markdown_initial_foldlevel=3
 
 au! BufNewFile,BufRead *.coffee setf coffee
 autocmd FileType coffee setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
