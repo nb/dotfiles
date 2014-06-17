@@ -27,6 +27,7 @@ alias cleandotsvn='find . -name ".svn" -exec rm -rf {} \;'
 alias g=git
 alias gpr='git pull --rebase'
 alias gcm='git checkout master'
+alias gcd='cd `git rev-parse --show-toplevel`'
 
 ### MISC ###
 alias cleanpyc='find . -name "*.pyc" -delete'
