@@ -37,6 +37,8 @@ else
 	RPROMPT='%{$fg_bold[green]%}%~%{$fg_bold[white]%}:%{$fg_bold[blue]%}%m %{$fg_bold[red]%}$(vcprompt)%{$reset_color%}'
 fi
 
+eval "$(direnv hook zsh)"
+
 ### COMPLETION ###
 autoload compinit
 compinit -u
