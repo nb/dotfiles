@@ -41,3 +41,7 @@ alias makemos='ls *.po | xargs basename -s .po |  xargs -I % msgfmt %.po -o %.mo
 function editexec {
 	$EDITOR `which $1`
 }
+
+function find. {
+	find -L . -iname "*$1*"
+}
