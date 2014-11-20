@@ -2,6 +2,7 @@
 alias ls='ls -G'
 
 alias o='open .'
+alias e=mvim
 
 alias gitx='open -a GitX .'
 alias x=gitx
