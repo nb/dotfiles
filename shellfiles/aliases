@@ -12,7 +12,8 @@ alias cp='cp -i'
 alias cd..='cd ..'
 alias ..='cd ..'
 alias tree='tree -C'
-alias ec="$EDITOR ."
+alias e="$EDITOR"
+alias e.="$EDITOR ."
 alias oepn=open
 
 ### SVN ALIASES ###
