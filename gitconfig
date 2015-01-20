@@ -23,6 +23,7 @@
 	unstage = reset HEAD
 	uncommit = reset --soft HEAD^
 	move-branch-pointer = update-ref -m "reset: Reset branch to new commit"
+	empty-commit = commit --allow-empty
 
 [push]
 	default = tracking
