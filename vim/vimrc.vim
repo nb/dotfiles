@@ -6,35 +6,40 @@ set nocompatible
 
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'vundle'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'nb/vim-trailing-whitespace'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-git.git'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'groenewege/vim-less'
-Bundle 'edsono/vim-matchit'
-Bundle 'ap/vim-css-color'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'stephpy/vim-yaml'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/greper.vim'
-Bundle 'rizzatti/dash.vim'
-Bundle 'zerowidth/vim-copy-as-rtf'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'mikewest/vimroom'
-Bundle 'rayburgemeestre/phpfolding.vim'
-Bundle 'goldfeld/vim-seek'
-Bundle 'mhinz/vim-signify'
-Bundle 'danro/rename.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'nb/vim-trailing-whitespace'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git.git'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'groenewege/vim-less'
+Plugin 'edsono/vim-matchit'
+Plugin 'ap/vim-css-color'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'stephpy/vim-yaml'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'rizzatti/funcoo.vim'
+Plugin 'rizzatti/greper.vim'
+Plugin 'rizzatti/dash.vim'
+Plugin 'zerowidth/vim-copy-as-rtf'
+Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'mikewest/vimroom'
+Plugin 'rayburgemeestre/phpfolding.vim'
+Plugin 'goldfeld/vim-seek'
+Plugin 'mhinz/vim-signify'
+Plugin 'danro/rename.vim'
+Plugin 'kana/vim-textobj-user'
+Plugin 'reedes/vim-textobj-quote'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mxw/vim-jsx'
+call vundle#end()
 
 " enable loading filetype and indentation plugins
 filetype plugin on
