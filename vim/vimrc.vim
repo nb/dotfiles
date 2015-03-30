@@ -141,6 +141,7 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " disable phpcs
 let g:syntastic_php_checkers = ['php', 'phpmd']
+let g:syntastic_javascript_checkers = ['jsxhint']
 
 " automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
