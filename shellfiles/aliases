@@ -30,6 +30,8 @@ alias gpr='git pull --rebase'
 alias gcm='git checkout master'
 alias gcdev='git checkout develop'
 alias gcd='cd `git rev-parse --show-toplevel`'
+alias gup='git fetch && git checkout master && git rebase origin/master && git checkout - && git rebase'
+alias git-delete-merged-branches='git branch --merged master | grep -v "\*" | xargs -n 1 git branch -d'
 
 ### MISC ###
 alias cleanpyc='find . -name "*.pyc" -delete'
