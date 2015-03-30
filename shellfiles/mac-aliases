@@ -12,6 +12,7 @@ alias dngs='open *.[dD][nN][gG]'
 alias rwls='open *.[rR][wW][lL]'
 
 alias mplayer='open -a "MPlayer OSX Extended"'
+alias chrome='open -a "Google Chrome"'
 alias mute="osascript -e 'set volume 0'"
 
 alias clean-dns-cache='sudo killall -HUP mDNSResponder'
