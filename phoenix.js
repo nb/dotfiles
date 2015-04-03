@@ -11,6 +11,12 @@ function moveToScreen(window, screen) {
 	}
 }
 
+function bindLaunch( key, modifiers, appName ) {
+	api.bind( key, modifiers, function() {
+		api.launch( appName );
+	} );
+}
+
 var debugMode = true;
 function debug( message ) {
 	if ( debugMode ) api.alert( message );
@@ -20,7 +26,7 @@ function debug( message ) {
  * BINDINGS
  ***********************************************/
 
-debugMode = true;
+debugMode = false;
 
 var triple = ['ctrl','alt','cmd'];
 
@@ -60,3 +66,20 @@ api.bind( 'r', triple, function() {
 		screenFrame = win.screen().frameWithoutDockOrMenu();
 	win.setFrame( {x: screenFrame.x + screenFrame.width / 2, y: screenFrame.y, width: screenFrame.width / 2, height: screenFrame.height} );
 } );
+
+bindLaunch( '/', ['cmd'], 'iTerm' );
+bindLaunch( ';', ['cmd'], 'MacVim' );
+bindLaunch( '\'', ['cmd'], 'Safari' );
+bindLaunch( '\'', ['ctrl'], 'Firefox' );
+bindLaunch( ';', ['ctrl'], 'Google Chrome' );
+bindLaunch( '.', ['cmd'], 'Slack' );
+bindLaunch( '.', ['cmd', 'shift'], 'Skype' );
+bindLaunch( '.', ['cmd', 'ctrl'], 'LimeChat' );
+bindLaunch( '\\', ['cmd', 'shift'], 'The Hit List' );
+bindLaunch( '\\', ['cmd', 'ctrl'], 'Simplenote' );
+bindLaunch( '\'', ['cmd', 'ctrl'], 'Mail' );
+bindLaunch( '\'', ['cmd', 'shift'], 'Mailplane 3' );
+bindLaunch( '\\', ['cmd'], 'iTunes' );
+bindLaunch( 'm', triple, 'MPlayer OSX Extended' );
+bindLaunch( 'k', ['cmd', 'ctrl'], 'Keynote' );
+
