@@ -1,20 +1,29 @@
-function moveToScreen(window, screen) {
-	if ( !window || !screen ) return;
+function centerWindowInFrame( window, targetFrame ) {
 	var windowFrame = window.frame(),
-		newScreenFrame = screen.frameWithoutDockOrMenu(),
-		newScreenCenter = {x: newScreenFrame.x + newScreenFrame.width / 2, y: newScreenFrame.y + newScreenFrame.height / 2};
-	if ( windowFrame.width <= newScreenFrame.width && windowFrame.height <= newScreenFrame.height ) {
-		window.setTopLeft( {x: newScreenCenter.x - windowFrame.width / 2, y: newScreenCenter.y - windowFrame.height / 2} );
-	} else {
-		window.setTopLeft( {x: newScreenFrame.x, y: newScreenFrame.y} );
-		window.maximize();
-	}
+		targetFrameCenter = {x: targetFrame.x + targetFrame.width / 2, y: targetFrame.y + targetFrame.height / 2};
+	window.setTopLeft( {x: targetFrameCenter.x - windowFrame.width / 2, y: targetFrameCenter.y - windowFrame.height / 2} );
+}
+
+function maximizeWindowInFrame( window, targetFrame ) {
+	window.setFrame( targetFrame );
+}
+
+function windowFitsInFrame( window, targetFrame ) {
+	var windowFrame = window.frame();
+	return ( windowFrame.width <= targetFrame.width && windowFrame.height <= targetFrame.height );
 }
 
 function bindLaunch( key, modifiers, appName ) {
 	api.bind( key, modifiers, function() {
 		api.launch( appName );
 	} );
+}
+
+function frameOfNextScreen( window ) {
+	if ( ! window || ! window.screen().nextScreen() ) {
+		return;
+	}
+	return window.screen().nextScreen().frameWithoutDockOrMenu();
 }
 
 var debugMode = true;
@@ -41,9 +50,27 @@ api.bind( 't', triple, function() {
 } );
 
 api.bind( 'n', triple, function() {
-	debug( 'Moving to next screen' );
-	var win = Window.focusedWindow();
-	moveToScreen( win, win.screen().nextScreen() );
+	debug( 'Center in next screen' );
+	var window = Window.focusedWindow(),
+		nextScreenFrame = frameOfNextScreen( window );
+	if ( !window || !nextScreenFrame ) {
+		return;
+	}
+	if ( windowFitsInFrame( window, nextScreenFrame ) ) {
+		centerWindowInFrame( window, nextScreenFrame );
+	} else {
+		maximizeWindowInFrame( window, nextScreenFrame );
+	}
+} );
+
+api.bind( 'b', triple, function() {
+	debug( 'Maximize in next screen' );
+	var window = Window.focusedWindow(),
+		nextScreenFrame = frameOfNextScreen( window );
+	if ( !window || !nextScreenFrame ) {
+		return;
+	}
+	maximizeWindowInFrame( window, nextScreenFrame );
 } );
 
 api.bind( 'w', triple, function() {
