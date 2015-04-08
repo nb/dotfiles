@@ -109,4 +109,5 @@ bindLaunch( '\'', ['cmd', 'shift'], 'Mailplane 3' );
 bindLaunch( '\\', ['cmd'], 'iTunes' );
 bindLaunch( 'm', triple, 'MPlayer OSX Extended' );
 bindLaunch( 'k', ['cmd', 'ctrl'], 'Keynote' );
+bindLaunch( 'x', ['cmd', 'ctrl'], 'GitX' );
 
