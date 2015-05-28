@@ -19,6 +19,8 @@ defaults write com.apple.iTunes invertStoreLinks -bool YES
 chflags nohidden ~/Library
 # Make ⌘ + F focus the search input in iTunes
 defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
+# Don’t show Webkit Nightly homepage
+defaults write org.webkit.nightly.WebKit StartPageDisabled -bool YES
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Increase window resize speed for Cocoa applications
