@@ -1,0 +1,3 @@
+#!/bin/sh
+sudo networksetup -setproxyautodiscovery "iPhone USB" on
+sudo networksetup -setautoproxyurl "iPhone USB" file:///www/proxy-pac.txt
