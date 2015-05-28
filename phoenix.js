@@ -103,7 +103,7 @@ api.bind( 'r', triple, function() {
 
 bindLaunch( '/', ['cmd'], 'iTerm' );
 bindLaunch( ';', ['cmd'], 'MacVim' );
-bindLaunch( '\'', ['cmd'], 'Safari' );
+bindLaunch( '\'', ['cmd'], 'WebKit' );
 bindLaunch( '\'', ['ctrl'], 'Firefox' );
 bindLaunch( ';', ['ctrl'], 'Google Chrome' );
 bindLaunch( '.', ['cmd'], 'Slack' );
