@@ -7,5 +7,6 @@ alias -s mpg=mplayer
 alias -s m4v=mplayer
 
 alias -s pdf='open -a Preview'
+alias -s key='open -a Keynote'
 
 alias -s md=mvim
