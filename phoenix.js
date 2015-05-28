@@ -49,6 +49,13 @@ api.bind( 't', triple, function() {
 	api.alert( Window.focusedWindow().app().title(), 3 );
 } );
 
+api.bind( 'c', triple, function() {
+	debug( 'Centering in screen' );
+	var window = Window.focusedWindow(),
+		nextScreenFrame = window.screen().frameWithoutDockOrMenu();
+	centerWindowInFrame( window, nextScreenFrame );
+} );
+
 api.bind( 'n', triple, function() {
 	debug( 'Center in next screen' );
 	var window = Window.focusedWindow(),
