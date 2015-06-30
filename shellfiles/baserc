@@ -31,7 +31,7 @@ else
     SHELLFILES_OS=linux
 fi
 
-SHELLFILES_HOST=`hostname | sed 's/\.local$//' | sed 's/\.lan$//'`
+SHELLFILES_HOST=`hostname | sed 's/\.local$//' | sed 's/\.lan$//' | sed 's/\.home$//'`
 
 dotfile_load lib
 
