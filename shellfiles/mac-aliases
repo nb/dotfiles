@@ -18,6 +18,8 @@ alias mute="osascript -e 'set volume 0'"
 alias clean-dns-cache='sudo killall -HUP mDNSResponder'
 alias clean-font-cache='atsutil databases -removeUser; atsutil server -shutdown; atsutil server -ping'
 
+alias flushdns='sudo discoveryutil mdnsflushcache'
+
 function g() {
     open -a Safari "http://www.google.com/search?q=$*&esrch=BetaShortcuts&ie=utf-8&oe=utf-8"
 }
