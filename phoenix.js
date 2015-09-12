@@ -109,6 +109,7 @@ bindLaunch( ';', ['ctrl'], 'Google Chrome' );
 bindLaunch( '.', ['cmd'], 'Slack' );
 bindLaunch( '.', ['cmd', 'shift'], 'Skype' );
 bindLaunch( '.', ['cmd', 'ctrl'], 'LimeChat' );
+bindLaunch( ';', ['cmd', 'ctrl'], 'Calendar' );
 bindLaunch( '\\', ['cmd', 'shift'], 'The Hit List' );
 bindLaunch( '\\', ['cmd', 'ctrl'], 'Simplenote' );
 bindLaunch( '\'', ['cmd', 'ctrl'], 'Mail' );
