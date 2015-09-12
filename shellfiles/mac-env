@@ -1,4 +1,4 @@
-export EDITOR=mvim
+export EDITOR=nvim
 export NODE_PATH="/usr/local/lib/node_modules"
 export PYTHONPATH="/usr/local/lib/svn-python:$PYTHONPATH"
 export COMPOSER_LIB_PATH="$HOME/lib/php"
