@@ -1,6 +1,7 @@
+runtime mapmeta.vim
 filetype off
 
-set rtp+=~/.nvim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " shows trailing whitespace, clear it using :FixWhitespace
@@ -10,6 +11,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'rizzatti/dash.vim'
 call vundle#end()
 
 " enable loading filetype and indentation plugins
@@ -65,6 +67,16 @@ imap jk <Esc>
 :nnoremap <CR> :nohlsearch<cr>
 " Add Spaces inside parentheses, A8C Style
 map <Leader>s ci(<space><space><Esc>hp
+
+MapMeta 1 :tabnext 1<CR>
+MapMeta 2 :tabnext 2<CR>
+MapMeta 3 :tabnext 3<CR>
+MapMeta 4 :tabnext 4<CR>
+MapMeta 5 :tabnext 5<CR>
+MapMeta 6 :tabnext 6<CR>
+MapMeta 7 :tabnext 7<CR>
+MapMeta 8 :tabnext 8<CR>
+MapMeta 9 :tabnext 9<CR>
 
 " Set local working directory to the nearest project dir, or in the current
 " directory if not in a project
