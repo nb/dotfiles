@@ -35,8 +35,7 @@ set background=light
 colorscheme solarized
 
 " Source nvimrc files after editing
-autocmd bufwritepost .nvimrc source <afile>
-autocmd bufwritepost nvimrc.vim source <afile>
+autocmd bufwritepost init.vim source <afile>
 
 " Saving undo history between lanuches is precious
 set undofile
