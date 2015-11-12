@@ -119,4 +119,5 @@ bindLaunch( 'm', triple, 'MPlayer OSX Extended' );
 bindLaunch( 'k', ['cmd', 'ctrl'], 'Keynote' );
 bindLaunch( 'x', ['cmd', 'ctrl'], 'GitX' );
 bindLaunch( 'w', ['cmd', 'ctrl'], 'WordPress' );
+bindLaunch( 't', ['cmd', 'ctrl'], 'Telegram' );
 
