@@ -118,6 +118,8 @@ bindLaunch( '\\', ['cmd'], 'iTunes' );
 bindLaunch( 'm', triple, 'MPlayer OSX Extended' );
 bindLaunch( 'k', ['cmd', 'ctrl'], 'Keynote' );
 bindLaunch( 'x', ['cmd', 'ctrl'], 'GitX' );
-bindLaunch( 'w', ['cmd', 'ctrl'], 'WordPress' );
+bindLaunch( 'p', ['cmd', 'ctrl'], 'WordPress.com' );
 bindLaunch( 't', ['cmd', 'ctrl'], 'Telegram' );
+bindLaunch( 'd', ['cmd', 'ctrl'], 'Deckset' );
+bindLaunch( 'l', ['cmd', 'ctrl'], 'Wunderlist' );
 
