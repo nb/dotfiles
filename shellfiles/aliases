@@ -15,6 +15,7 @@ alias tree='tree -C'
 alias e="$EDITOR"
 alias e.="$EDITOR ."
 alias oepn=open
+alias ocean90=sudo
 
 ### SVN ALIASES ###
 alias v='svn diff | vim -'
