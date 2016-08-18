@@ -85,3 +85,4 @@ let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.min\.\(js\|css\)\|build\|vendor\|node_modules$'
 
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_mode_map = { 'passive_filetypes': ['php'] }
