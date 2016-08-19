@@ -13,6 +13,10 @@ if [ -z "$PRIVATE_SHELLFILES" ]; then
     PRIVATE_SHELLFILES="$PRIVATE_DOTFILES/shellfiles"
 fi
 
+if [ -z "$TERM_PROGRAM" ]; then
+	TERM_PROGRAM=default
+fi
+
 function dotfile_load() {
     [ -r $SHELLFILES/$1 ] && . $SHELLFILES/$1
     [ -r $PRIVATE_SHELLFILES/$1 ] && . $PRIVATE_SHELLFILES/$1
@@ -39,16 +43,20 @@ dotfile_load env
 dotfile_load ${SHELLFILES_SHELL}-env
 dotfile_load ${SHELLFILES_OS}-env
 dotfile_load ${SHELLFILES_HOST}-env
+dotfile_load ${TERM_PROGRAM}-env
 
 dotfile_load aliases
 dotfile_load ${SHELLFILES_SHELL}-aliases
 dotfile_load ${SHELLFILES_OS}-aliases
 dotfile_load ${SHELLFILES_HOST}-aliases
 dotfile_load ${SHELLFILES_SHELL}-${SHELLFILES_OS}-aliases
+dotfile_load ${TERM_PROGRAM}-aliases
 
 dotfile_load ${SHELLFILES_SHELL}rc
+dotfile_load ${TERM_PROGRAM}-${SHELLFILES_SHELL}rc
 
 dotfile_load init
 dotfile_load ${SHELLFILES_SHELL}-init
 dotfile_load ${SHELLFILES_OS}-init
 dotfile_load ${SHELLFILES_HOST}-init
+dotfile_load ${TERM_PROGRAM}-init
