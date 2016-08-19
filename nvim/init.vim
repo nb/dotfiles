@@ -12,6 +12,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rizzatti/dash.vim'
+Plugin 'danro/rename.vim'
 call vundle#end()
 
 " enable loading filetype and indentation plugins
