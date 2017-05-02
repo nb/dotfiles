@@ -17,6 +17,7 @@ Plugin 'danro/rename.vim'
 Plugin 'vim-scripts/indentpython.vim'
 " Python PEP-8 for syntastic
 Plugin 'nvie/vim-flake8'
+Plugin 'sbdchd/neoformat'
 call vundle#end()
 
 " enable loading filetype and indentation plugins
@@ -41,6 +42,12 @@ colorscheme solarized
 
 " Source nvimrc files after editing
 autocmd bufwritepost init.vim source <afile>
+
+autocmd FileType javascript set formatprg=prettier\ --stdin\ --single-quote\ --trailing-comma\ es5\ --no-semi
+let g:neoformat_try_formatprg = 1
+if expand('%:p') =~ '/Users/nb/dev/peerdrop/'
+    autocmd BufWritePre,TextChanged,InsertLeave *.js Neoformat
+endif
 
 " Saving undo history between lanuches is precious
 set undofile
