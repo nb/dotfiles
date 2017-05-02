@@ -13,6 +13,10 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rizzatti/dash.vim'
 Plugin 'danro/rename.vim'
+" Python indentation
+Plugin 'vim-scripts/indentpython.vim'
+" Python PEP-8 for syntastic
+Plugin 'nvie/vim-flake8'
 call vundle#end()
 
 " enable loading filetype and indentation plugins
