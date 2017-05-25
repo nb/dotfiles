@@ -1,2 +1,5 @@
 ### AUTOJUMP ###
-[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+[[ -f /usr/local/etc/autojump.sh ]] && . /usr/local/etc/autojump.sh
+# cached from . "$(brew --prefix nvm)/nvm.sh" --no-use
+# no-use is important, because it flags that there is no need to set default or to look for .nvmrc
+. "/usr/local/opt/nvm/nvm.sh" --no-use
