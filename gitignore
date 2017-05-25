@@ -13,8 +13,9 @@
 *.py[cod]
 *.egg
 *.egg-info
-dist
-build
+# sometimes needed for non-python projects
+#dist
+#build
 eggs
 parts
 var
