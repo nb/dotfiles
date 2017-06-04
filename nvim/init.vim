@@ -45,7 +45,7 @@ autocmd bufwritepost init.vim source <afile>
 
 autocmd FileType javascript set formatprg=prettier\ --stdin\ --single-quote\ --trailing-comma\ es5\ --no-semi
 let g:neoformat_try_formatprg = 1
-if expand('%:p') =~ '/Users/nb/dev/peerdrop/'
+if expand('%:p') =~ '/Users/nb/dev/peerdropx/'
     autocmd BufWritePre,TextChanged,InsertLeave *.js Neoformat
 endif
 
