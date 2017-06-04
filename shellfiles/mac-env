@@ -3,6 +3,9 @@ export NODE_PATH="/usr/local/lib/node_modules"
 export PYTHONPATH="/usr/local/lib/svn-python:$PYTHONPATH"
 export COMPOSER_LIB_PATH="$HOME/lib/php"
 
+# saves us a call to brew --prefix when autojump loads its config
+# which is around 100ms -- makes shell init noticeably faster
+export BREW_PREFIX=/usr/local
 # cached result of export PATH="$(brew --prefix php56)/bin:$PATH"
 export PATH="/usr/local/opt/php56/bin:$PATH"
 # cached result of export PATH="$(brew --prefix gettext)/bin:$PATH"
