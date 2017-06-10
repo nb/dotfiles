@@ -24,8 +24,13 @@ autoload -U colors
 colors
 setopt prompt_subst
 
-PROMPT='🐻  → '
-RPROMPT='%{$fg[green]%}%~%{$fg[white]%}:%{$fg[blue]%}%m%{$fg[white]%}:%{$fg[cyan]%}$(vcprompt -f %b)%{$reset_color%}'
+if [ -d ~/.impromptu ]
+then
+	source impromptu
+else
+	PROMPT='🐻  → '
+	RPROMPT='%{$fg[green]%}%~%{$fg[white]%}:%{$fg[blue]%}%m%{$fg[white]%}:%{$fg[cyan]%}$(vcprompt -f %b)%{$reset_color%}'
+fi
 
 eval "$(direnv hook zsh)"
 
