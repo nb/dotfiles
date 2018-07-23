@@ -38,7 +38,7 @@ alias git-delete-merged-branches='git branch --merged master | grep -v "\*" | xa
 alias cleanpyc='find . -name "*.pyc" -delete'
 alias killjobs='jobs -l | perl -pne '\''/\S+\s+(\d+)/; $_ = " $1" if($1);'\'' | xargs kill -9'
 alias cleandsstore='find . -name ".DS_Store" -delete'
-alias d='du -csm -- * | sort -n | tee .d-`date +"%Y-%m-%dx%H:%M:%S"`'
+alias d='du -csm -- * .* | sort -n | tee .d-`date +"%Y-%m-%dx%H:%M:%S"`'
 alias pinking-shears='ack --print0 -f --php --js --css --py | xargs -0 perl -pi -e "s/[\t ]+$//g"'
 alias makemos='ls *.po | xargs basename -s .po |  xargs -I % msgfmt %.po -o %.mo'
 
