@@ -113,7 +113,7 @@ bindLaunch( ';', ['cmd', 'ctrl'], 'Calendar' );
 bindLaunch( '\\', ['cmd', 'shift'], 'The Hit List' );
 bindLaunch( '\\', ['cmd', 'ctrl'], 'Simplenote' );
 bindLaunch( '\'', ['cmd', 'ctrl'], 'Mail' );
-bindLaunch( '\'', ['cmd', 'shift'], 'Mailplane 3' );
+bindLaunch( '\'', ['cmd', 'shift'], 'Mailplane' );
 bindLaunch( '\\', ['cmd'], 'iTunes' );
 bindLaunch( 'm', triple, 'MPlayer OSX Extended' );
 bindLaunch( 'k', ['cmd', 'ctrl'], 'Keynote' );
