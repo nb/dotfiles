@@ -6,7 +6,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " shows trailing whitespace, clear it using :FixWhitespace
 Plugin 'nb/vim-trailing-whitespace'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'frankier/neovim-colors-solarized-truecolor-only'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'editorconfig/editorconfig-vim'
