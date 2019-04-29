@@ -115,7 +115,7 @@ set t_Co=256
 set background=light
 colorscheme solarized
 
-set guifont=Consolas:h13
+set guifont=Fira\ Code:h16
 
 set number
 
