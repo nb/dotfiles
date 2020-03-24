@@ -1,3 +1,7 @@
+/**
+ * Phoenix 1.5 (quite old) config file
+ */
+
 function centerWindowInFrame(window, targetFrame) {
   var windowFrame = window.frame(),
     targetFrameCenter = {
