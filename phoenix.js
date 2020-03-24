@@ -132,8 +132,8 @@ api.bind("r", triple, function() {
   });
 });
 
-api.bind("k", triple, function() {
-  debug("Moving to middle 60%");
+api.bind("f", triple, function() {
+  debug("Focus window on middle 60%");
   var win = Window.focusedWindow(),
     screenFrame = win.screen().frameWithoutDockOrMenu();
   win.setFrame({
@@ -142,6 +142,9 @@ api.bind("k", triple, function() {
     width: 0.6 * screenFrame.width,
     height: screenFrame.height
   });
+  win
+    .otherWindowsOnSameScreen()
+    .forEach(otherWindow => otherWindow.app().hide());
 });
 
 bindLaunch("/", ["cmd"], "iTerm");
