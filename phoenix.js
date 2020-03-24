@@ -128,6 +128,18 @@ api.bind("r", triple, function() {
   });
 });
 
+api.bind("k", triple, function() {
+  debug("Moving to middle 60%");
+  var win = Window.focusedWindow(),
+    screenFrame = win.screen().frameWithoutDockOrMenu();
+  win.setFrame({
+    x: screenFrame.x + screenFrame.width / 5,
+    y: screenFrame.y,
+    width: 0.6 * screenFrame.width,
+    height: screenFrame.height
+  });
+});
+
 bindLaunch("/", ["cmd"], "iTerm");
 bindLaunch(";", ["cmd"], "Visual Studio Code");
 //bindLaunch( '\'', ['cmd'], 'Safari Technology Preview' );
