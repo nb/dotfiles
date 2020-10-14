@@ -6,11 +6,11 @@ function centerWindowInFrame(window, targetFrame) {
   var windowFrame = window.frame(),
     targetFrameCenter = {
       x: targetFrame.x + targetFrame.width / 2,
-      y: targetFrame.y + targetFrame.height / 2
+      y: targetFrame.y + targetFrame.height / 2,
     };
   window.setTopLeft({
     x: targetFrameCenter.x - windowFrame.width / 2,
-    y: targetFrameCenter.y - windowFrame.height / 2
+    y: targetFrameCenter.y - windowFrame.height / 2,
   });
 }
 
@@ -116,7 +116,7 @@ api.bind("l", triple, function() {
     x: screenFrame.x,
     y: screenFrame.y,
     width: screenFrame.width / 2,
-    height: screenFrame.height
+    height: screenFrame.height,
   });
 });
 
@@ -128,7 +128,7 @@ api.bind("r", triple, function() {
     x: screenFrame.x + screenFrame.width / 2,
     y: screenFrame.y,
     width: screenFrame.width / 2,
-    height: screenFrame.height
+    height: screenFrame.height,
   });
 });
 
@@ -140,11 +140,11 @@ api.bind("f", triple, function() {
     x: screenFrame.x + screenFrame.width / 5,
     y: screenFrame.y,
     width: 0.6 * screenFrame.width,
-    height: screenFrame.height
+    height: screenFrame.height,
   });
   win
     .otherWindowsOnSameScreen()
-    .forEach(otherWindow => otherWindow.app().hide());
+    .forEach((otherWindow) => otherWindow.app().hide());
 });
 
 bindLaunch("/", ["cmd"], "iTerm");
