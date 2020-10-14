@@ -40,3 +40,4 @@ pip-log.txt
 *.un~
 Session.vim
 
+.vscode
