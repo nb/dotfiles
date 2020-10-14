@@ -18,19 +18,11 @@ bindkey '\eq' push-line-or-edit
 bindkey '^i' expand-or-complete-prefix
 
 ### PROMPT ###
-# prompt shamelessly stolen from http://github.com/skanev/SHELLFILES/blob/master/zsh/config
-# sans the vcprompt, which doesn't help me much with subversion
 autoload -U colors
 colors
 setopt prompt_subst
-
-if [ -d ~/.impromptu ]
-then
-	source impromptu
-else
-	PROMPT='🐻  → '
-	RPROMPT='%{$fg[green]%}%~%{$fg[white]%}:%{$fg[blue]%}%m%{$fg[white]%}:%{$fg[cyan]%}$(vcprompt -f %b)%{$reset_color%}'
-fi
+PROMPT='🐻  → '
+RPROMPT='%{$fg[green]%}%~%{$fg[white]%}:%{$fg[blue]%}%m%{$fg[white]%}:%{$fg[cyan]%}$(vcprompt -f %b)%{$reset_color%}'
 
 eval "$(direnv hook zsh)"
 
