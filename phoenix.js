@@ -161,7 +161,7 @@ bindLaunch(";", ["cmd", "ctrl"], "Calendar");
 bindLaunch("\\", ["cmd", "ctrl"], "Simplenote");
 bindLaunch("'", ["cmd", "ctrl"], "Mail");
 bindLaunch("'", ["cmd", "shift"], "Mailplane");
-bindLaunch("\\", ["cmd"], "iTunes");
+bindLaunch("\\", ["cmd"], "Music");
 bindLaunch("m", triple, "MPlayer OSX Extended");
 bindLaunch("k", ["cmd", "ctrl"], "Keynote");
 bindLaunch("x", ["cmd", "ctrl"], "GitX");
