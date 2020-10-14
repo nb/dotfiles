@@ -163,6 +163,7 @@ bindLaunch("'", ["cmd", "ctrl"], "Mail");
 bindLaunch("'", ["cmd", "shift"], "Mailplane");
 bindLaunch("\\", ["cmd"], "Music");
 bindLaunch("m", triple, "MPlayer OSX Extended");
+bindLaunch("z", triple, "zoom.us");
 bindLaunch("k", ["cmd", "ctrl"], "Keynote");
 bindLaunch("x", ["cmd", "ctrl"], "GitX");
 bindLaunch("p", ["cmd", "ctrl"], "WordPress.com");
