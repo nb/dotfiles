@@ -36,3 +36,6 @@
 	interactive = auto
 [pull]
 	rebase = true
+[diff]
+	colormoved = default
+	colormovedws = allow-indentation-change
