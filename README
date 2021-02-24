@@ -8,11 +8,14 @@ of this folder.
 Here are the suggested links:
 
 ~/dotfiles              -> dotfiles
-~/.bashrc               -> dotfiles/shellfiles/sample-shellrc
-~/.zshrc                -> dotfiles/shellfiles/sample-shellrc
-~/.vimrc                -> vim/vimrc.vim
-~/.vim                  -> vim
+~/.bashrc              -> dotfiles/shellfiles/sample-shellrc
+~/.zshrc               -> dotfiles/shellfiles/sample-shellrc
 ~/.ssh/config           -> ssh-config
 ~/.gitconfig            -> gitconfig
-~/.subversion/config    -> gitconfig
+~/.gitignore           -> gitignore
+~/.phoenix.js          -> phoenix.js
+
+Old ones:
+~/.vimrc                -> vim/vimrc.vim
+~/.vim                  -> vim
 ~/.mess                 -> mess
