@@ -1,13 +1,5 @@
 #!/bin/sh
 
-# disable Lion new window animation
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
-# disable Spaces animation
-defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES
-# disable Mail.app animations
-defaults write com.apple.Mail DisableReplyAnimations -bool YES
-# disable Mountain Lion scroll animation
-defaults write -g NSScrollAnimationEnabled -bool NO
 # Fix iTunes arrows
 defaults write com.apple.iTunes show-store-arrow-links -bool YES
 defaults write com.apple.iTunes show-store-link-arrows -bool YES
@@ -23,8 +15,6 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Fi
 defaults write org.webkit.nightly.WebKit StartPageDisabled -bool YES
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
-# Increase window resize speed for Cocoa applications
-defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Automatically open a new Finder window when a volume is mounted
