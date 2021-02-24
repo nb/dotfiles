@@ -26,7 +26,7 @@
 	empty-commit = commit --allow-empty
 
 [push]
-	default = tracking
+	default = current
 
 [color]
 	ui = auto
