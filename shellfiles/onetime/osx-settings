@@ -1,18 +1,9 @@
 #!/bin/sh
 
-# Fix iTunes arrows
-defaults write com.apple.iTunes show-store-arrow-links -bool YES
-defaults write com.apple.iTunes show-store-link-arrows -bool YES
-defaults write com.apple.iTunes invertStoreLinks -bool YES
-
 # Most of the settings below have been stolen from https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
-# Make ⌘ + F focus the search input in iTunes
-defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
-# Don’t show Webkit Nightly homepage
-defaults write org.webkit.nightly.WebKit StartPageDisabled -bool YES
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Display full POSIX path as Finder window title
@@ -59,9 +50,6 @@ sudo ln -s /etc/zshenv /etc/zprofile
 # instead of the default 70 minutes
 sudo pmset -a standbydelay $((12 * 3600))
 
-# enable plugins in Mail.app
-defaults write com.apple.mail EnableBundles -bool true
-defaults write com.apple.mail BundleCompatibilityVersion -string 3
 
 # faster key repetition: https://twitter.com/rauchg/status/863451302348468225
 defaults write NSGlobalDomain KeyRepeat -int 1
