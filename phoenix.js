@@ -31,7 +31,7 @@ function frameOfNextScreen(window) {
   if (!window || !window.screen().next()) {
     return;
   }
-  return window.screen().next().visibleFrame();
+  return window.screen().next().flippedVisibleFrame();
 }
 
 const triple = ["ctrl", "alt", "cmd"];
@@ -44,7 +44,7 @@ function bindLaunch(key, modifiers, appName) {
 Key.on("c", triple, function () {
   debug("Centering in screen");
   const window = Window.focused(),
-    nextScreenFrame = window.screen().visibleFrame();
+    nextScreenFrame = window.screen().flippedVisibleFrame();
   centerWindowInFrame(window, nextScreenFrame);
 });
 
@@ -71,14 +71,14 @@ Key.on("n", triple, function () {
 Key.on("w", triple, function () {
   debug("Moving to top-left");
   const window = Window.focused();
-  const screenFrame = window.screen().visibleFrame();
+  const screenFrame = window.screen().flippedVisibleFrame();
   window.setTopLeft({ x: screenFrame.x, y: screenFrame.y });
 });
 
 Key.on("l", triple, function () {
   debug("Moving to left-half");
   const window = Window.focused(),
-    screenFrame = window.screen().visibleFrame();
+    screenFrame = window.screen().flippedVisibleFrame();
   window.setFrame({
     x: screenFrame.x,
     y: screenFrame.y,
@@ -90,7 +90,7 @@ Key.on("l", triple, function () {
 Key.on("r", triple, function () {
   debug("Moving to right-half");
   const window = Window.focused();
-  const screenFrame = window.screen().visibleFrame();
+  const screenFrame = window.screen().flippedVisibleFrame();
   window.setFrame({
     x: screenFrame.x + screenFrame.width / 2,
     y: screenFrame.y,
