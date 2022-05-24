@@ -111,3 +111,4 @@ bindLaunch("'", ["cmd", "shift"], "Mailplane");
 bindLaunch("k", ["cmd", "ctrl"], "Keynote");
 bindLaunch("t", ["cmd", "ctrl"], "Telegram");
 bindLaunch("r", ["cmd", "ctrl"], "Roam Research");
+bindLaunch("k", ["cmd", "ctrl"], "Xcode");
