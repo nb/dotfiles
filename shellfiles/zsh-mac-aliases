@@ -1,10 +1,10 @@
-alias -s avi=mplayer
-alias -s mp4=mplayer
-alias -s wmv=mplayer
-alias -s mkv=mplayer
-alias -s mov=mplayer
-alias -s mpg=mplayer
-alias -s m4v=mplayer
+alias -s avi=mpv
+alias -s mp4=mpv
+alias -s wmv=mpv
+alias -s mkv=mpv
+alias -s mov=mpv
+alias -s mpg=mpv
+alias -s m4v=mpv
 
 alias -s pdf='open -a Preview'
 alias -s key='open -a Keynote'
