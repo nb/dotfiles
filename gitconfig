@@ -44,3 +44,5 @@
 [diff]
 	colormoved = default
 	colormovedws = allow-indentation-change
+[init]
+	defaultBranch = trunk
