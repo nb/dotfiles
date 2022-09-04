@@ -61,7 +61,6 @@ Key.on("n", triple, function () {
     return;
   }
   if (windowFitsInFrame(window, nextScreenFrame)) {
-    debug("fits!");
     centerWindowInFrame(window, nextScreenFrame);
   } else {
     maximizeWindowInFrame(window, nextScreenFrame);
