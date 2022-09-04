@@ -99,6 +99,30 @@ Key.on("r", triple, function () {
   });
 });
 
+Key.on("u", triple, function () {
+  debug("Moving to upper-half");
+  const window = Window.focused();
+  const screenFrame = window.screen().flippedVisibleFrame();
+  window.setFrame({
+    x: screenFrame.x,
+    y: screenFrame.y,
+    width: screenFrame.width,
+    height: screenFrame.height / 2,
+  });
+});
+
+Key.on("d", triple, function () {
+  debug("Moving to lower-half");
+  const window = Window.focused();
+  const screenFrame = window.screen().flippedVisibleFrame();
+  window.setFrame({
+    x: screenFrame.x,
+    y: screenFrame.y + screenFrame.height / 2,
+    width: screenFrame.width,
+    height: screenFrame.height / 2,
+  });
+});
+
 bindLaunch("/", ["cmd"], "iTerm");
 bindLaunch(";", ["cmd"], "Visual Studio Code");
 bindLaunch("'", ["cmd"], "Safari");
