@@ -102,7 +102,7 @@ Key.on("r", triple, function () {
 bindLaunch("/", ["cmd"], "iTerm");
 bindLaunch(";", ["cmd"], "Visual Studio Code");
 bindLaunch("'", ["cmd"], "Safari");
-bindLaunch("'", ["ctrl"], "Firefox");
+bindLaunch("'", ["ctrl"], "Firefox Developer Edition");
 bindLaunch(";", ["ctrl"], "Google Chrome Canary");
 bindLaunch(".", ["cmd"], "Slack");
 bindLaunch("\\", ["cmd", "ctrl"], "Simplenote");
