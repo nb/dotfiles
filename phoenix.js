@@ -130,7 +130,7 @@ bindLaunch(";", ["ctrl"], "Google Chrome Canary");
 bindLaunch(".", ["cmd"], "Slack");
 bindLaunch("\\", ["cmd", "ctrl"], "Simplenote");
 bindLaunch("\\", ["cmd", "shift"], "zoom.us");
-bindLaunch("'", ["cmd", "shift"], "Mailplane");
+bindLaunch("'", ["cmd", "shift"], "Google Chrome Canary");
 bindLaunch("k", ["cmd", "ctrl"], "Keynote");
 bindLaunch("t", ["cmd", "ctrl"], "Telegram");
 bindLaunch("r", ["cmd", "ctrl"], "Roam Research");
