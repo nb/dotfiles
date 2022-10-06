@@ -1,4 +1,2 @@
 export EDITOR=code
-export NODE_PATH="/usr/local/lib/node_modules"
-export PATH="/usr/local/opt/gettext/bin:$PATH"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
