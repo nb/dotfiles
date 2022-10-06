@@ -1,6 +1,6 @@
-### AUTOJUMP ###
-[[ -f /usr/local/etc/autojump.sh ]] && . /usr/local/etc/autojump.sh
-# cached from . "$(brew --prefix nvm)/nvm.sh" --no-use
+# https://github.com/gsamokovarov/jump
+eval "$(jump shell)"
+
 export NVM_DIR="$HOME/.nvm"
 # no-use is important, because it flags that there is no need to set default or to look for .nvmrc
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
