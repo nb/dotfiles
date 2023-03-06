@@ -128,7 +128,7 @@ bindLaunch("'", ["cmd"], "Safari");
 bindLaunch("'", ["ctrl"], "Firefox Developer Edition");
 bindLaunch(";", ["ctrl"], "Google Chrome Canary");
 bindLaunch(".", ["cmd"], "Slack");
-bindLaunch("\\", ["cmd", "ctrl"], "Simplenote");
+bindLaunch("\\", ["cmd", "ctrl"], "Microsoft To Do");
 bindLaunch("\\", ["cmd", "shift"], "zoom.us");
 bindLaunch("'", ["cmd", "shift"], "Google Chrome Canary");
 bindLaunch("k", ["cmd", "ctrl"], "Keynote");
