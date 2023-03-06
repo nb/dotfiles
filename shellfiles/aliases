@@ -29,6 +29,7 @@ alias cleandotsvn='find . -name ".svn" -exec rm -rf {} \;'
 alias g=git
 alias gpr='git pull --rebase'
 alias gcm='git checkout master'
+alias gct='git checkout trunk'
 alias gcdev='git checkout develop'
 alias gcd='cd `git rev-parse --show-toplevel`'
 alias gup='git fetch && git checkout master && git rebase origin/master && git checkout - && git rebase'
