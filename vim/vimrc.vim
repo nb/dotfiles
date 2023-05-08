@@ -6,41 +6,6 @@ set nocompatible
 
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'nb/vim-trailing-whitespace'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-git.git'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'groenewege/vim-less'
-Plugin 'edsono/vim-matchit'
-Plugin 'ap/vim-css-color'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'stephpy/vim-yaml'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'rizzatti/funcoo.vim'
-Plugin 'rizzatti/greper.vim'
-Plugin 'rizzatti/dash.vim'
-Plugin 'zerowidth/vim-copy-as-rtf'
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'mikewest/vimroom'
-Plugin 'rayburgemeestre/phpfolding.vim'
-Plugin 'goldfeld/vim-seek'
-Plugin 'mhinz/vim-signify'
-Plugin 'danro/rename.vim'
-Plugin 'kana/vim-textobj-user'
-Plugin 'reedes/vim-textobj-quote'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'mxw/vim-jsx'
-call vundle#end()
-
 " enable loading filetype and indentation plugins
 filetype plugin on
 filetype indent on
@@ -89,10 +54,6 @@ set laststatus=2
 
 " disable folding
 set nofoldenable
-" Visual line marker
-if v:version >= 703
-  set colorcolumn=72
-endif
 
 " Source vimrc files after editing
 autocmd bufwritepost .vimrc source <afile>
@@ -106,12 +67,6 @@ autocmd BufReadPost *
 \   exe "normal g`\"" |
 \ endif
 
-highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
-highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
-highlight DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
-highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
-
-set t_Co=256
 set background=light
 colorscheme solarized
 
@@ -135,30 +90,10 @@ map <Space> :
 
 autocmd FileType php MapMeta % :w!<CR>:!php %<CR>
 autocmd FileType php MapMeta ^ :w!<CR>:!php -l %<CR>
-autocmd FileType php MapMeta & :w!<CR>:!recurse_phpunit %:h --testdox %:p<CR>
-autocmd FileType php MapMeta * :w!<CR>:!recurse_phpunit %:h %:p<CR>
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-
-" disable phpcs
-let g:syntastic_php_checkers = ['php', 'phpmd']
-let g:syntastic_javascript_checkers = ['eslint']
 
 " automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
-
-" Set local working directory to the nearest project dir, or in the current
-" directory if not in a project
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_root_markers = ['.vimproject']
-let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.min\.\(js\|css\)\|build\|vendor\|node_modules$'
-
-let g:gist_detect_filetype = 1
-let g:gist_clip_command = 'pbcopy'
-let g:gist_open_browser_after_post = 1
-
-let g:html_number_lines = 0
-let g:copy_as_rtf_using_local_buffer = 1
 
 map <Left> <Nop>
 map <Right> <Nop>
@@ -175,14 +110,9 @@ autocmd FileType markdown setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=
 autocmd FileType mkd setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 let g:vim_markdown_initial_foldlevel=3
 
-au! BufNewFile,BufRead *.coffee setf coffee
-autocmd FileType coffee setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
-
 au! BufNewFile,BufRead *.json setf json
 autocmd FileType json setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 nmap <leader>md :!/usr/local/bin/markdown "%" \| pbcopy<cr>
 nmap <leader>ms :!echo "<meta charset='UTF-8'>" > /tmp/vim-md.html && /usr/local/bin/markdown % >> /tmp/vim-md.html<cr>
 nmap <leader>mr :!echo "<meta charset='UTF-8'>" > /tmp/vim-md.html && /usr/local/bin/markdown % >> /tmp/vim-md.html && open /tmp/vim-md.html<cr>
-
-:nmap <silent> <leader>d <Plug>DashSearch
