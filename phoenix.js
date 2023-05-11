@@ -1,4 +1,10 @@
 const debugMode = true;
+
+Phoenix.set({
+  daemon: true,
+  openAtLogin: true
+});
+
 function debug(message) {
   if (debugMode) Phoenix.log(message);
 }
