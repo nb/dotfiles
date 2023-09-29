@@ -128,6 +128,17 @@ Key.on("d", triple, function () {
   });
 });
 
+Key.on("3", triple, function () {
+  debug("Center and resize to 2/3 of screen");
+  const window = Window.focused();
+  const screenFrame = window.screen().flippedVisibleFrame();
+  window.setFrame({
+    x: screenFrame.width / 6,
+    y: screenFrame.height / 6,
+    width: (2 * screenFrame.width) / 3,
+    height: (2 * screenFrame.height) / 3,
+  });
+});
 
 Key.on("a", triple, function () {
   // list all apps
