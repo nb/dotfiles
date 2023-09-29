@@ -5,8 +5,8 @@ Phoenix.set({
   openAtLogin: true,
 });
 
-function debug(message) {
-  if (debugMode) Phoenix.log(message);
+function debug() {
+  if (debugMode) Phoenix.log(...arguments);
 }
 
 function centerWindowInFrame(window, targetFrame) {
