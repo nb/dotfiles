@@ -128,6 +128,14 @@ Key.on("d", triple, function () {
   });
 });
 
+
+Key.on("a", triple, function () {
+  // list all apps
+  const apps = App.all();
+  const names = apps.map((app) => app.name()).join(", ");
+  debug("Apps: ", names);
+});
+
 bindLaunch("/", ["cmd"], "iTerm");
 bindLaunch(";", ["cmd"], "Visual Studio Code");
 bindLaunch("'", ["cmd"], "Safari");
