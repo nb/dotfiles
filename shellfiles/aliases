@@ -48,5 +48,5 @@ function editexec {
 }
 
 function find. {
-	find -L . -iname "*$1*"
+	find -L . -iname "*$1*" ${@:2}
 }
