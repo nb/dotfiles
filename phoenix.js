@@ -157,6 +157,6 @@ bindLaunch("\\", ["cmd", "ctrl"], "Microsoft To Do");
 bindLaunch("\\", ["cmd", "shift"], "zoom.us");
 bindLaunch("'", ["cmd", "shift"], "Google Chrome Canary");
 bindLaunch("k", ["cmd", "ctrl"], "Keynote");
-bindLaunch("t", ["cmd", "ctrl"], "Telegram");
+bindLaunch("t", ["cmd", "ctrl"], "Texts");
 bindLaunch("r", ["cmd", "ctrl"], "Roam Research");
 bindLaunch("k", ["cmd", "ctrl"], "Xcode");
