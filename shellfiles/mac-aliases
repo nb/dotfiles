@@ -6,6 +6,9 @@ alias o='open .'
 alias gitx='open -a GitX .'
 alias x=gitx
 
+alias ack=rg
+alias ag=rg
+
 # open photos in a directory
 alias jpgs='open *.[jJ][pP][gG]'
 alias dngs='open *.[dD][nN][gG]'
