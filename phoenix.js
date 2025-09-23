@@ -148,15 +148,17 @@ Key.on("a", triple, function () {
 });
 
 bindLaunch("/", ["cmd"], "iTerm");
-bindLaunch(";", ["cmd"], "Visual Studio Code");
+bindLaunch(";", ["cmd"], "Cursor");
 bindLaunch("'", ["cmd"], "Safari");
 bindLaunch("'", ["ctrl"], "Firefox Developer Edition");
-bindLaunch(";", ["ctrl"], "Google Chrome Canary");
+bindLaunch(";", ["ctrl"], "Google Chrome");
 bindLaunch(".", ["cmd"], "Slack");
-bindLaunch("\\", ["cmd", "ctrl"], "Microsoft To Do");
+bindLaunch("\\", ["cmd", "ctrl"], "Simplenote");
 bindLaunch("\\", ["cmd", "shift"], "zoom.us");
-bindLaunch("'", ["cmd", "shift"], "Google Chrome Canary");
+bindLaunch("'", ["cmd", "shift"], "Google Chrome");
 bindLaunch("k", ["cmd", "ctrl"], "Keynote");
-bindLaunch("t", ["cmd", "ctrl"], "Texts");
+bindLaunch("t", ["cmd", "ctrl"], "Telegram");
 bindLaunch("r", ["cmd", "ctrl"], "Roam Research");
 bindLaunch("k", ["cmd", "ctrl"], "Xcode");
+bindLaunch("e", ["cmd", "ctrl"], "Finder");
+bindLaunch("c", ["cmd", "ctrl"], "Claude");
