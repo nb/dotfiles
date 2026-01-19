@@ -162,4 +162,6 @@ bindLaunch("r", ["cmd", "ctrl"], "Obsidian");
 bindLaunch("k", ["cmd", "ctrl"], "Xcode");
 bindLaunch("e", ["cmd", "ctrl"], "Finder");
 bindLaunch("c", ["cmd", "ctrl"], "Claude");
+bindLaunch("i", ["cmd", "ctrl"], "iA Writer");
+bindLaunch("v", ["cmd", "ctrl"], "Viber");
 bindLaunch("o", ["cmd", "ctrl"], "Obsidian");
