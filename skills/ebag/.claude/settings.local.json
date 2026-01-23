@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ebag search:*)",
+      "Bash(ebag cart --help:*)",
+      "Bash(ebag cart add --help:*)",
+      "Bash(ebag cart add:*)"
+    ]
+  }
+}
