@@ -1,6 +1,6 @@
 ---
 name: commit-message
-description: "Write well-crafted git commit messages following best practices. Use when creating commits, writing commit messages, or when the user asks for help with commits."
+description: "Write well-crafted commit messages following best practices. Use when creating commits, writing commit messages, or when the user asks for help with commits."
 ---
 
 # Commit Message Skill
