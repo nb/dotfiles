@@ -54,3 +54,8 @@ Sort domains by length so longer domains match first.
 ## After writing
 
 Stage the relevant files and create the commit. Never commit unrelated changes together - whitespace changes, style fixes, and other bugs should be separate commits.
+
+## Important
+
+- Do NOT add a "Co-Authored-By" line to commit messages. The commit should only attribute the human author.
+- If you're missing context about **why** a change was made, ask clarifying questions before writing the commit message. Don't guess or leave out important context.
