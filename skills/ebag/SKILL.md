@@ -5,13 +5,39 @@ description: "Interact with the eBag (ebag.bg) online grocery store via the loca
 
 # eBag CLI
 
-Use the local `ebag` command for all store actions.
+Use the local `ebag` command for all store actions. Add `--json` to any command for machine-readable output.
+
+## Commands
+
+### Authentication
+- `ebag login` - Store session cookie and validate it
+- `ebag status` - Show current login status
+
+### Products
+- `ebag search <query> [--limit N] [--page N]` - Search for products (default: 20 results, page 0)
+- `ebag product <productId>` - Get detailed product info by ID
+
+### Cart
+- `ebag cart show` - Show cart contents
+- `ebag cart add <productId> [--qty N]` - Add product to cart (default qty: 1)
+- `ebag cart update <productId> [--qty N]` - Update product quantity in cart
+
+### Orders
+- `ebag order list` - List recent orders
+- `ebag order show <orderId>` - Show order details
+
+### Delivery
+- `ebag slots [--limit N]` - Show next available delivery slots (default: 10)
+
+### Lists
+- `ebag list show [listId]` - Show all lists, or items in a specific list
+- `ebag list add <listId> <productId> [--qty N]` - Add product to a list
 
 ## Workflow
 
-1. Run `ebag --help` to discover available commands and flags.
-2. Use the most specific subcommand for the request (search, cart, orders, delivery slots, checkout).
-3. When information is missing (store location, delivery window, quantity), ask a targeted follow-up question.
+1. Use the most specific subcommand for the request.
+2. When information is missing (delivery window, quantity, product variant), ask a targeted follow-up question.
+3. Use `--json` when you need to parse output programmatically.
 
 ## Understanding user preferences
 
@@ -24,5 +50,5 @@ Before asking follow-up questions, check saved lists to understand the user's ta
 
 ## Reliability notes
 
-- Confirm destructive or irreversible actions (checkout, cancel order, clear cart).
-- If authentication is required, prompt the user to log in via the CLI and then continue.
+- Confirm destructive or irreversible actions (clear cart, place order).
+- If authentication is required, prompt the user to run `ebag login` and then continue.
