@@ -41,12 +41,13 @@ Use the local `ebag` command for all store actions. Add `--json` to any command 
 
 ## Understanding user preferences
 
-Before asking follow-up questions, check saved lists to understand the user's taste and habits:
+Before asking follow-up questions, check saved lists and past orders to understand the user's taste and habits:
 
-1. Run `ebag list show` to see all lists.
-2. Check relevant lists for context - all lists represent user favorites and preferences.
-3. Use found products to infer preferences (preferred brands, sizes, variants, flavors).
-4. Apply this context when searching or recommending products.
+1. Run `ebag list show` to see all lists - these represent user favorites and preferences.
+2. Run `ebag order list` to see recent orders - these show actual purchasing patterns.
+3. Use `ebag order show <orderId>` to see specific order details when needed.
+4. Use found products to infer preferences (preferred brands, sizes, variants, flavors, typical quantities).
+5. Apply this context when searching or recommending products.
 
 ## Reliability notes
 
