@@ -43,7 +43,11 @@ function frameOfNextScreen(window) {
 const triple = ["ctrl", "alt", "cmd"];
 function bindLaunch(key, modifiers, appName) {
   Key.on(key, modifiers, function () {
-    App.launch(appName).focus();
+    if (appName.includes("/")) {
+      Task.run("/bin/bash", ["-c", "open " + appName]);
+    } else {
+      App.launch(appName).focus();
+    }
   });
 }
 
@@ -165,3 +169,5 @@ bindLaunch("c", ["cmd", "ctrl"], "Claude");
 bindLaunch("i", ["cmd", "ctrl"], "iA Writer");
 bindLaunch("v", ["cmd", "ctrl"], "Viber");
 bindLaunch("o", ["cmd", "ctrl"], "Obsidian");
+bindLaunch("w", ["cmd", "ctrl"], "obsidian://open?vault=brain&file=TODO%2FWork%20TODO");
+bindLaunch("d", ["cmd", "ctrl"], "~/Downloads");
