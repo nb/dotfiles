@@ -44,6 +44,7 @@ const triple = ["ctrl", "alt", "cmd"];
 function bindLaunch(key, modifiers, appName) {
   Key.on(key, modifiers, function () {
     if (appName.includes("/")) {
+      // Use bash to get shell expansion (e.g. ~ for home directory)
       Task.run("/bin/bash", ["-c", "open " + appName]);
     } else {
       App.launch(appName).focus();
