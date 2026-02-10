@@ -179,5 +179,5 @@ bindLaunch("c", ["cmd", "ctrl"], "Claude");
 bindLaunch("i", ["cmd", "ctrl"], "iA Writer");
 bindLaunch("v", ["cmd", "ctrl"], "Viber");
 bindLaunch("o", ["cmd", "ctrl"], "Obsidian");
-bindLaunch("w", ["cmd", "ctrl"], "obsidian://open?vault=brain&file=TODO%2FWork%20TODO");
+bindLaunch("w", ["cmd", "ctrl"], "obsidian://advanced-uri?vault=brain&filepath=TODO%2FWork%20TODO&openmode=true");
 bindLaunch("d", ["cmd", "ctrl"], "~/Downloads");
