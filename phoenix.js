@@ -41,11 +41,20 @@ function frameOfNextScreen(window) {
 }
 
 const triple = ["ctrl", "alt", "cmd"];
+function shellEscape(s) {
+  return "'" + s.replace(/'/g, "'\\''") + "'";
+}
 function bindLaunch(key, modifiers, appName) {
   Key.on(key, modifiers, function () {
     if (appName.includes("/")) {
-      // Use bash to get shell expansion (e.g. ~ for home directory)
-      Task.run("/bin/bash", ["-c", "open " + appName]);
+      // Preserve tilde expansion, but shell-escape the rest
+      let prefix = "";
+      let rest = appName;
+      if (appName.startsWith("~/")) {
+        prefix = "~/";
+        rest = appName.slice(2);
+      }
+      Task.run("/bin/bash", ["-c", "open " + prefix + shellEscape(rest)]);
     } else {
       App.launch(appName).focus();
     }
