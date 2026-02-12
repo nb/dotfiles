@@ -45,3 +45,5 @@
 	colormovedws = allow-indentation-change
 [init]
 	defaultBranch = trunk
+[include]
+	path = ~/.gitconfig.local
