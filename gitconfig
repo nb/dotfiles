@@ -1,5 +1,4 @@
 [core]
-	editor = code --wait
 	excludesfile = ~/.gitignore
 
 [user]
