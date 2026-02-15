@@ -2,7 +2,7 @@ if [ -z "$DOTFILES" ]; then
     DOTFILES="$HOME/dotfiles"
 fi
 if [ -z "$PRIVATE_DOTFILES" ]; then
-    PRIVATE_DOTFILES="$HOME/github/personal/dotfiles"
+    PRIVATE_DOTFILES="$HOME/private-dotfiles"
 fi
 
 if [ -z "$SHELLFILES" ]; then
